@@ -44,7 +44,7 @@ export default function About() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {values.map((v) => (
-              <Card key={v.title} className="p-6 flex flex-col items-center text-center">
+              <Card key={v.title} className="p-6 flex flex-col items-center text-center border-0 shadow-lg shadow-slate/10 rounded-2xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
                 <div className="w-14 h-14 rounded-full bg-brandred flex items-center justify-center shadow-md shadow-brandred/30">
                   <v.icon size={24} className="text-white" strokeWidth={1.75} />
                 </div>
@@ -62,7 +62,7 @@ export default function About() {
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-navy text-center">From First Message to Finished Job</h2>
           <div className="grid gap-6 md:grid-cols-3">
             {process.map((p) => (
-              <Card key={p.step} className="p-6 relative overflow-hidden">
+              <Card key={p.step} className="p-6 relative overflow-hidden border-0 shadow-lg shadow-slate/10 rounded-2xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
                 <span className="absolute right-3 top-2 font-extrabold text-slate/5" style={{ fontSize: '3.5rem', lineHeight: 1 }}>{p.step}</span>
                 <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center relative z-10">
                   <p.icon size={22} className="text-white" strokeWidth={1.75} />
