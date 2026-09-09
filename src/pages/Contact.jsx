@@ -49,9 +49,13 @@ export default function Contact() {
           </div>
 
           <div className="grid gap-12 md:grid-cols-2 items-start">
-            <div>
-              <p className="text-sm text-slate mb-4">
-                Prefer to chat directly? WhatsApp is the fastest way to reach us — most messages get a reply within minutes during working hours.
+            <div className="rounded-2xl bg-white border-l-4 border-brandred shadow-lg shadow-slate/10 p-6">
+              <span className="flex-shrink-0 w-11 h-11 rounded-full bg-brandred/10 flex items-center justify-center mb-4">
+                <MessageCircle size={20} className="text-brandred" strokeWidth={2} />
+              </span>
+              <p className="text-base font-bold text-navy mb-2">Prefer to chat directly?</p>
+              <p className="text-sm text-slate mb-5 leading-relaxed">
+                WhatsApp is the fastest way to reach us — most messages get a reply within minutes during working hours.
               </p>
               <a
                 href={`https://wa.me/${business.whatsapp}`}
