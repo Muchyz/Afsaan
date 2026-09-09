@@ -38,7 +38,7 @@ export default function Contact() {
           <div className="grid gap-8 md:grid-cols-2 items-start">
 
             {/* Left: contact-info-card equivalent */}
-            <div className="rounded-2xl bg-white shadow-2xl shadow-navy/10 border border-slate/10 p-6">
+            <div className="rounded-[20px] bg-white shadow-[0_12px_30px_rgba(27,58,92,0.14)] p-6 transition-all duration-300 hover:shadow-[0_20px_44px_rgba(27,58,92,0.22)] hover:-translate-y-1">
               <h2 className="text-lg font-bold text-navy mb-5">Get in Touch</h2>
               <ul className="flex flex-col gap-3.5">
                 {infoItems.map(({ icon: Icon, label, valueKey }) => (
@@ -68,7 +68,7 @@ export default function Contact() {
             </div>
 
             {/* Right: contact-form-card, same background/padding/shadow as left */}
-            <div className="rounded-2xl bg-white shadow-2xl shadow-navy/10 border border-slate/10 p-6">
+            <div className="rounded-[20px] bg-white shadow-[0_12px_30px_rgba(27,58,92,0.14)] p-6 transition-all duration-300 hover:shadow-[0_20px_44px_rgba(27,58,92,0.22)] hover:-translate-y-1">
               <h2 className="text-lg font-bold text-navy mb-5">Send a Message</h2>
               <form onSubmit={handleSubmit} className="space-y-5">
                 <div>
