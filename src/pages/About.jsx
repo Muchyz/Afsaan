@@ -88,7 +88,7 @@ export default function About() {
             {services.map((s) => {
               const Icon = iconMap[s.icon]
               return (
-                <Link key={s.slug} to={`/services#${s.slug}`} className="flex flex-col items-center text-center gap-3 bg-white rounded-2xl shadow-lg shadow-slate/10 p-5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
+                <Link key={s.slug} to={`/services/${s.slug}`} className="flex flex-col items-center text-center gap-3 bg-white rounded-2xl shadow-lg shadow-slate/10 p-5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
                   <div className="w-12 h-12 rounded-full bg-brandred flex items-center justify-center">
                     {Icon && <Icon size={22} className="text-white" strokeWidth={1.75} />}
                   </div>
