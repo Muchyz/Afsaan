@@ -10,7 +10,7 @@ export default function ServicesGrid({ preview = false }) {
     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
       {list.map((s) => (
         <Card key={s.slug}>
-          <img src={s.img} alt={s.title} className="h-48 w-full object-cover" />
+          <img src={s.img} alt={s.title} className="w-full h-auto" />
           <div className="p-5">
             <h3 className="text-lg font-bold text-navy mb-2">{s.title}</h3>
             <Tag>{s.turnaround.split(' ').slice(0, 3).join(' ')}</Tag>
