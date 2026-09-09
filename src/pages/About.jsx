@@ -44,8 +44,10 @@ export default function About() {
 
           <div className="mt-10 grid gap-6 md:grid-cols-3">
             {values.map((v) => (
-              <Card key={v.title} className="p-6">
-                <v.icon size={22} className="text-brandred" strokeWidth={1.75} />
+              <Card key={v.title} className="p-6 flex flex-col items-center text-center">
+                <div className="w-14 h-14 rounded-full bg-brandred flex items-center justify-center shadow-md shadow-brandred/30">
+                  <v.icon size={24} className="text-white" strokeWidth={1.75} />
+                </div>
                 <p className="mt-4 font-bold text-navy">{v.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-slate">{v.text}</p>
               </Card>
@@ -62,7 +64,9 @@ export default function About() {
             {process.map((p) => (
               <Card key={p.step} className="p-6 relative overflow-hidden">
                 <span className="absolute right-3 top-2 font-extrabold text-slate/5" style={{ fontSize: '3.5rem', lineHeight: 1 }}>{p.step}</span>
-                <p.icon size={22} className="text-brandred relative z-10" strokeWidth={1.75} />
+                <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center relative z-10">
+                  <p.icon size={22} className="text-white" strokeWidth={1.75} />
+                </div>
                 <p className="mt-4 font-bold text-navy relative z-10">{p.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-slate relative z-10">{p.text}</p>
               </Card>
