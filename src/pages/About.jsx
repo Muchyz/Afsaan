@@ -57,19 +57,22 @@ export default function About() {
       </section>
 
       <section className="section-pad bg-offwhite">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto">
           <p className="font-semibold uppercase tracking-wide text-sm mb-2 text-brandred text-center">How We Work</p>
-          <h2 className="text-3xl md:text-4xl font-bold mb-10 text-navy text-center">From First Message to Finished Job</h2>
-          <div className="grid gap-6 md:grid-cols-3">
-            {process.map((p) => (
-              <Card key={p.step} className="p-6 relative overflow-hidden border-0 shadow-lg shadow-slate/10 rounded-2xl transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
-                <span className="absolute right-3 top-2 font-extrabold text-slate/5" style={{ fontSize: '3.5rem', lineHeight: 1 }}>{p.step}</span>
-                <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center relative z-10">
+          <h2 className="text-3xl md:text-4xl font-bold mb-14 text-navy text-center">From First Message to Finished Job</h2>
+          <div className="relative">
+            <div className="absolute left-7 top-4 bottom-4 w-0.5 bg-gradient-to-b from-brandred via-sky to-brandred md:left-1/2" />
+            {process.map((p, i) => (
+              <div key={p.step} className={`relative flex items-start gap-6 pb-12 last:pb-0 md:w-1/2 ${i % 2 === 0 ? 'md:pr-10 md:ml-0' : 'md:pl-10 md:ml-auto md:flex-row-reverse md:text-right'}`}>
+                <div className="flex-shrink-0 w-14 h-14 rounded-full bg-navy border-4 border-offwhite shadow-lg flex items-center justify-center relative z-10">
                   <p.icon size={22} className="text-white" strokeWidth={1.75} />
                 </div>
-                <p className="mt-4 font-bold text-navy relative z-10">{p.title}</p>
-                <p className="mt-2 text-sm leading-relaxed text-slate relative z-10">{p.text}</p>
-              </Card>
+                <div className="flex-1 bg-white rounded-2xl shadow-lg shadow-slate/10 p-5">
+                  <span className="text-brandred font-extrabold text-xs uppercase tracking-widest">Step {p.step}</span>
+                  <p className="mt-1 font-bold text-navy text-lg">{p.title}</p>
+                  <p className="mt-2 text-sm leading-relaxed text-slate">{p.text}</p>
+                </div>
+              </div>
             ))}
           </div>
         </div>
