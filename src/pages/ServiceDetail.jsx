@@ -80,19 +80,36 @@ export default function ServiceDetail() {
             </div>
           )}
         </div>
-        <Card className="h-fit p-6 space-y-6">
-          <div>
-            <p className="flex items-center gap-2 text-xs uppercase tracking-wide text-slate/60"><Ruler size={14} className="text-brandred" /> Materials</p>
-            <p className="mt-1 text-sm text-navy font-medium">{service.material}</p>
+        <div className="h-fit lg:sticky lg:top-24 rounded-2xl bg-white shadow-2xl shadow-navy/10 border border-slate/10 overflow-hidden">
+          <div className="h-1.5 bg-gradient-to-r from-brandred to-navy" />
+          <div className="p-6 space-y-5">
+            <div className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-brandred/10 flex items-center justify-center">
+                <Ruler size={16} className="text-brandred" strokeWidth={2} />
+              </span>
+              <div>
+                <p className="text-xs uppercase tracking-wide text-slate/60 font-semibold">Materials</p>
+                <p className="mt-0.5 text-sm text-navy font-medium leading-snug">{service.material}</p>
+              </div>
+            </div>
+
+            <div className="h-px bg-slate/10" />
+
+            <div className="flex items-start gap-3">
+              <span className="flex-shrink-0 w-9 h-9 rounded-full bg-brandred/10 flex items-center justify-center">
+                <Clock size={16} className="text-brandred" strokeWidth={2} />
+              </span>
+              <div>
+                <p className="text-xs uppercase tracking-wide text-slate/60 font-semibold">Typical Turnaround</p>
+                <p className="mt-0.5 text-sm text-navy font-medium leading-snug">{service.turnaround}</p>
+              </div>
+            </div>
+
+            <Button to={`/quote?service=${service.slug}`} className="w-full justify-center mt-2 shadow-lg shadow-brandred/20">
+              Request a Quote <ArrowUpRight size={16} />
+            </Button>
           </div>
-          <div>
-            <p className="flex items-center gap-2 text-xs uppercase tracking-wide text-slate/60"><Clock size={14} className="text-brandred" /> Typical turnaround</p>
-            <p className="mt-1 text-sm text-navy font-medium">{service.turnaround}</p>
-          </div>
-          <Button to={`/quote?service=${service.slug}`} className="w-full justify-center">
-            Request a Quote <ArrowUpRight size={16} />
-          </Button>
-        </Card>
+        </div>
       </section>
 
       <section className="section-pad bg-offwhite">
