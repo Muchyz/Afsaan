@@ -61,8 +61,10 @@ export default function ServiceDetail() {
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
             {includedItems.map((item) => (
-              <div key={item} className="flex items-start gap-2.5 bg-offwhite rounded-xl p-3.5">
-                <Check size={16} className="text-brandred mt-0.5 flex-shrink-0" strokeWidth={2.5} />
+              <div key={item} className="flex items-start gap-3 bg-offwhite rounded-xl p-3.5">
+                <span className="flex-shrink-0 w-5 h-5 rounded-full bg-brandred flex items-center justify-center mt-0.5">
+                  <Check size={12} className="text-white" strokeWidth={3} />
+                </span>
                 <span className="text-sm text-navy font-medium leading-snug">{item}</span>
               </div>
             ))}
