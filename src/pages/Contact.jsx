@@ -36,7 +36,7 @@ export default function Contact() {
 
       <div className="section-pad">
         <div className="max-w-6xl mx-auto">
-          <div className="grid gap-6 sm:grid-cols-3 mb-12 -mt-2">
+          <div className="grid gap-6 sm:grid-cols-3 mb-12 pt-10">
             {infoCards.map(({ icon: Icon, label, valueKey }) => (
               <div key={label} className="rounded-2xl bg-white border-l-4 border-brandred shadow-lg shadow-slate/10 p-5">
                 <span className="flex-shrink-0 w-10 h-10 rounded-full bg-brandred/10 flex items-center justify-center mb-3">
