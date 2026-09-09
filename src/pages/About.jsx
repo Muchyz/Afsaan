@@ -1,5 +1,7 @@
+import { Link } from 'react-router-dom'
 import { Wrench, PaintRoller, ShieldCheck, ClipboardList, Ruler, MessageCircle } from 'lucide-react'
 import { business, heroImage, services } from '../data/content'
+import { iconMap } from '../data/icons'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 
@@ -82,12 +84,18 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <p className="font-semibold uppercase tracking-wide text-sm mb-2 text-brandred text-center">What We Cover</p>
           <h2 className="text-3xl md:text-4xl font-bold mb-10 text-navy text-center">Every Job We Take On</h2>
-          <div className="flex flex-wrap justify-center gap-3">
-            {services.map((s) => (
-              <span key={s.slug} className="border border-slate/20 text-slate px-4 py-2 rounded-full text-sm font-medium">
-                {s.title}
-              </span>
-            ))}
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+            {services.map((s) => {
+              const Icon = iconMap[s.icon]
+              return (
+                <Link key={s.slug} to={`/services#${s.slug}`} className="flex flex-col items-center text-center gap-3 bg-white rounded-2xl shadow-lg shadow-slate/10 p-5 transition-transform duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-slate/15">
+                  <div className="w-12 h-12 rounded-full bg-brandred flex items-center justify-center">
+                    {Icon && <Icon size={22} className="text-white" strokeWidth={1.75} />}
+                  </div>
+                  <p className="font-semibold text-navy text-sm">{s.title}</p>
+                </Link>
+              )
+            })}
           </div>
         </div>
       </section>
