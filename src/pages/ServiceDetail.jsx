@@ -15,11 +15,13 @@ const includedItems = [
   'Clean handover and after-completion support',
 ]
 
-const processSteps = [
-  { icon: MessageCircle, title: 'Consultation', text: 'Reach out with your idea, photos, or requirements. We advise on design, materials, and realistic timelines.' },
-  { icon: Hammer, title: 'Fabrication & Prep', text: 'Work is carried out in our workshop or on your site, built and finished to the same standard either way.' },
-  { icon: Truck, title: 'Installation & Handover', text: 'We deliver and install on site, or hand over a ready piece — either way, the job isn\u2019t done until you\u2019re satisfied.' },
+const fallbackProcessSteps = [
+  { title: 'Consultation', text: 'Reach out with your idea, photos, or requirements. We advise on design, materials, and realistic timelines.' },
+  { title: 'Fabrication & Prep', text: 'Work is carried out in our workshop or on your site, built and finished to the same standard either way.' },
+  { title: 'Installation & Handover', text: 'We deliver and install on site, or hand over a ready piece — either way, the job isn\u2019t done until you\u2019re satisfied.' },
 ]
+
+const processIcons = [MessageCircle, Hammer, Truck]
 
 export default function ServiceDetail() {
   const { slug } = useParams()
@@ -28,6 +30,7 @@ export default function ServiceDetail() {
 
   const Icon = iconMap[service.icon]
   const related = services.filter((s) => s.slug !== service.slug && s.category === service.category).slice(0, 3)
+  const activeSteps = service.process && service.process.length > 0 ? service.process : fallbackProcessSteps
 
   return (
     <div>
@@ -95,16 +98,19 @@ export default function ServiceDetail() {
           <p className="font-semibold uppercase tracking-wide text-sm mb-2 text-brandred text-center">How It Works</p>
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-navy text-center">From First Message to Finished {service.title}</h2>
           <div className="grid gap-5 md:grid-cols-3">
-            {processSteps.map((p, i) => (
+            {activeSteps.map((p, i) => {
+              const StepIcon = processIcons[i] || processIcons[processIcons.length - 1]
+              return (
               <div key={p.title} className="bg-white rounded-2xl shadow-lg shadow-slate/10 p-5 text-center">
                 <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center mx-auto">
-                  <p.icon size={20} className="text-white" strokeWidth={1.75} />
+                  <StepIcon size={20} className="text-white" strokeWidth={1.75} />
                 </div>
                 <span className="mt-3 block text-brandred font-extrabold text-xs uppercase tracking-widest">Step {i + 1}</span>
                 <p className="mt-1 font-bold text-navy">{p.title}</p>
                 <p className="mt-2 text-sm leading-relaxed text-slate">{p.text}</p>
               </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
