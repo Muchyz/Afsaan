@@ -102,15 +102,12 @@ export default function About() {
 
       <section className="section-pad bg-offwhite">
         <div className="max-w-6xl mx-auto">
-          <div className="relative overflow-hidden rounded-2xl p-8 text-center md:p-14" style={{ background: 'linear-gradient(135deg, #0E2A47 0%, #1e4976 100%)' }}>
-            <div
-              className="absolute inset-0 opacity-[0.06] pointer-events-none"
-              style={{ backgroundImage: 'repeating-linear-gradient(45deg, white 0px, white 1px, transparent 1px, transparent 18px)' }}
-            />
-            <div className="absolute -bottom-20 -right-20 w-64 h-64 rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(227,34,39,0.25) 0%, transparent 70%)' }} />
-            <div className="relative">
-              <p className="font-extrabold text-white text-2xl md:text-3xl">Working on a job outside {business.location}?</p>
-              <p className="mt-3 text-gray-300 max-w-md mx-auto">We travel for the right job — get in touch with your location and details.</p>
+          <div className="relative overflow-hidden rounded-2xl p-8 text-center md:p-14 bg-white border-2 border-black">
+            <div className="absolute top-0 left-0 right-0 h-2" style={{ background: 'repeating-linear-gradient(45deg, #FBBF24 0, #FBBF24 14px, #000 14px, #000 28px)' }} />
+            <div className="absolute bottom-0 left-0 right-0 h-2" style={{ background: 'repeating-linear-gradient(45deg, #FBBF24 0, #FBBF24 14px, #000 14px, #000 28px)' }} />
+            <div className="relative pt-2">
+              <p className="font-extrabold text-black text-2xl md:text-3xl">Working on a job outside {business.location}?</p>
+              <p className="mt-3 text-slate max-w-md mx-auto">We travel for the right job — get in touch with your location and details.</p>
               <div className="mt-7 flex justify-center">
                 <Button to="/quote">Request a Quote</Button>
               </div>
