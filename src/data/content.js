@@ -1,3 +1,7 @@
+import heroTorchCutting from '../assets/images/hero-torch-cutting.jpg'
+import heroBeamWelding from '../assets/images/hero-beam-welding.jpg'
+import heroGrinderSparks from '../assets/images/hero-grinder-sparks.jpg'
+import heroWelderSparks from '../assets/images/hero-welder-sparks.jpg'
 const unsplash = (id) => `https://images.unsplash.com/${id}?w=1400&q=80&auto=format&fit=crop`
 
 export const business = {
@@ -11,9 +15,10 @@ export const business = {
 
 export const heroImage = unsplash('photo-1455165814004-1126a7199f9b')
 export const heroImages = [
-  unsplash('photo-1455165814004-1126a7199f9b'),
-  unsplash('photo-1590869942905-a4ada45d5a8a'),
-  unsplash('photo-1574359411659-15573a27fd0c'),
+  heroWelderSparks,
+  heroGrinderSparks,
+  heroBeamWelding,
+  heroTorchCutting,
 ]
 
 export const services = [
