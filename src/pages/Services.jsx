@@ -4,7 +4,7 @@ export default function Services() {
   return (
     <div>
       <div className="relative overflow-hidden text-center py-16 px-6 bg-cover bg-center" style={{ backgroundImage: "url('/images/services-bg.jpg')" }}>
-        <div className="absolute inset-0 bg-navy/80" />
+        <div className="absolute inset-0 bg-navy/55" />
         <div className="relative max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-[0.16em] text-white/60 font-semibold mb-3">Services</p>
           <h1 className="text-2xl sm:text-4xl font-bold text-white">Welding & Painting, Covering the Full Compound</h1>
