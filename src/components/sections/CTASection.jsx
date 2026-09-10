@@ -4,7 +4,14 @@ import { business } from '../../data/content'
 
 export default function CTASection() {
   return (
-    <div className="relative bg-brandred text-white text-center py-16 px-6 overflow-hidden">
+    <div
+  className="relative text-white text-center py-16 px-6 overflow-hidden"
+  style={{
+    backgroundImage: "linear-gradient(rgba(15,15,15,0.65), rgba(15,15,15,0.65)), url('/images/welding-bg.jpg')",
+    backgroundSize: 'cover',
+    backgroundPosition: 'center',
+  }}
+>
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'repeating-linear-gradient(45deg, white 0px, white 1px, transparent 1px, transparent 18px)' }} />
       <div className="absolute -bottom-24 -left-24 w-72 h-72 rounded-full pointer-events-none" style={{ background: 'radial-gradient(circle, rgba(14,42,71,0.3) 0%, transparent 70%)' }} />
       <div className="relative max-w-xl mx-auto">
