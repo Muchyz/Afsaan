@@ -14,13 +14,9 @@ function getIncludedItems(service) {
     isPainting
       ? 'Rust removal and surface prep before any topcoat goes on'
       : 'Structural fabrication engineered for real-world load, not guesswork',
-    isPainting
-      ? 'Weather-resistant finish built to handle sun, rain, and daily wear'
-      : 'Every weld and joint finished to hold up under daily use',
     'Fixed, written quote before any work begins — no surprise costs',
-    service.turnaround.toLowerCase().includes('quoted')
-      ? `Free on-site assessment to scope your ${service.title.toLowerCase()} job`
-      : `Free on-site consultation for your ${service.title.toLowerCase()} job`,
+    'We work across Kenya — ready-built work delivered, or our team on site',
+    'Custom designs and contract work available on request',
   ]
 }
 
@@ -74,7 +70,7 @@ export default function ServiceDetail() {
         <div className="md:col-span-2">
           <p className="max-w-prose text-base leading-relaxed text-slate">{service.description}</p>
 
-          <div className="mt-10 grid gap-3 sm:grid-cols-2">
+          <div className="mt-6 grid gap-3 sm:grid-cols-2">
             {getIncludedItems(service).map((item) => (
               <div key={item} className="flex items-start gap-3 bg-offwhite rounded-xl p-3.5">
                 <span className="flex-shrink-0 w-5 h-5 rounded-full bg-brandred flex items-center justify-center mt-0.5">
