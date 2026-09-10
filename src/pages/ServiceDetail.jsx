@@ -6,14 +6,18 @@ import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import NotFound from './NotFound'
 
-const includedItems = [
-  'Free on-site consultation and measurement',
-  'Fixed, written quote before any work begins',
-  'Quality materials — no shortcuts on gauge or finish',
-  'Experienced fabricators and painters on every job',
-  'On-site installation or delivery, your choice',
-  'Clean handover and after-completion support',
-]
+function getIncludedItems(service) {
+  return [
+    'Free on-site consultation and measurement',
+    'Fixed, written quote before any work begins',
+    `Materials used: ${service.material}`,
+    `Typical turnaround: ${service.turnaround}`,
+    service.category === 'painting'
+      ? 'Rust treatment and prep included, not just topcoat'
+      : 'Engineered and fabricated to hold real-world load',
+    'Clean handover and after-completion support',
+  ]
+}
 
 const fallbackProcessSteps = [
   { title: 'Consultation', text: 'Reach out with your idea, photos, or requirements. We advise on design, materials, and realistic timelines.' },
@@ -64,14 +68,9 @@ export default function ServiceDetail() {
       <section className="container-page grid gap-12 py-14 md:grid-cols-3 md:py-20">
         <div className="md:col-span-2">
           <p className="max-w-prose text-base leading-relaxed text-slate">{service.description}</p>
-          <p className="mt-4 max-w-prose text-base leading-relaxed text-slate">
-            As {business.name}, we don't just quote and disappear — we fabricate, paint, and install this work ourselves,
-            whether that means building it in our workshop and delivering it ready to fit, or bringing the team to your
-            site from day one. Every job is backed by the same crew from first measurement to final coat.
-          </p>
 
           <div className="mt-10 grid gap-3 sm:grid-cols-2">
-            {includedItems.map((item) => (
+            {getIncludedItems(service).map((item) => (
               <div key={item} className="flex items-start gap-3 bg-offwhite rounded-xl p-3.5">
                 <span className="flex-shrink-0 w-5 h-5 rounded-full bg-brandred flex items-center justify-center mt-0.5">
                   <Check size={12} className="text-white" strokeWidth={3} />
