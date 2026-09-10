@@ -10,11 +10,11 @@ export default function TestimonialsSection({ preview = false }) {
     <div className="grid gap-6 md:grid-cols-3">
       {list.map((t) => (
         <Card key={t.name} className="p-6 relative overflow-visible">
-          <Quote size={36} className="absolute -top-3 -right-1 text-brandred/10" fill="currentColor" strokeWidth={0} />
+          <Quote size={40} className="absolute -top-2 -right-1 text-navy/5" fill="currentColor" strokeWidth={0} />
 
-          <div className="flex gap-1 text-amber-400 relative">
+          <div className="flex gap-0.5 text-amber-500 drop-shadow-sm relative">
             {Array.from({ length: 5 }).map((_, i) => (
-              <Star key={i} size={14} fill="currentColor" strokeWidth={0} />
+              <Star key={i} size={15} fill="currentColor" strokeWidth={0} />
             ))}
           </div>
 
@@ -23,20 +23,14 @@ export default function TestimonialsSection({ preview = false }) {
           </p>
 
           <div className="flex items-center gap-3 mt-6 pt-5 border-t border-slate/10">
-            <div className="relative shrink-0">
-              <span className="flex items-center justify-center w-11 h-11 rounded-full bg-gradient-to-br from-navy to-navy-dark text-white text-sm font-bold shadow-md shadow-navy/30">
-                {initials(t.name)}
-              </span>
-              <BadgeCheck
-                size={16}
-                fill="#2563eb"
-                color="white"
-                strokeWidth={2.5}
-                className="absolute -bottom-0.5 -right-0.5 drop-shadow-sm"
-              />
-            </div>
+            <span className="flex items-center justify-center w-11 h-11 rounded-full bg-navy text-white text-sm font-bold shadow-md shadow-navy/30 shrink-0">
+              {initials(t.name)}
+            </span>
             <div>
-              <p className="text-sm text-navy font-bold leading-tight">{t.name}</p>
+              <p className="text-sm text-navy font-bold leading-tight flex items-center gap-1.5">
+                {t.name}
+                <BadgeCheck size={15} fill="#2563eb" color="white" strokeWidth={2.5} />
+              </p>
               <p className="text-xs text-slate/60 mt-0.5">{t.location}</p>
             </div>
           </div>
