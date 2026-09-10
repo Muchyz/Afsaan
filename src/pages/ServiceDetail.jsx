@@ -54,7 +54,7 @@ export default function ServiceDetail() {
         <div className="md:col-span-2">
           <p className="max-w-prose text-base leading-relaxed text-slate">{service.description}</p>
           <p className="mt-4 max-w-prose text-base leading-relaxed text-slate">
-            As {business.name}, we don't just quote and disappear \u2014 we fabricate, paint, and install this work ourselves,
+            As {business.name}, we don't just quote and disappear — we fabricate, paint, and install this work ourselves,
             whether that means building it in our workshop and delivering it ready to fit, or bringing the team to your
             site from day one. Every job is backed by the same crew from first measurement to final coat.
           </p>
