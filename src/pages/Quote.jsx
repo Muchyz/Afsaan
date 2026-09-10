@@ -3,7 +3,6 @@ import { useSearchParams } from 'react-router-dom'
 import { Send, User, Phone, MapPin, Wrench, Ruler, MessageSquare, ShieldCheck, Clock, BadgeCheck } from 'lucide-react'
 import { services, business } from '../data/content'
 import Card from '../components/ui/Card'
-import SectionHeading from '../components/ui/SectionHeading'
 
 const fieldWrap = 'relative mt-2'
 const iconClass = 'absolute left-3 top-1/2 -translate-y-1/2 text-brandred'
@@ -23,11 +22,20 @@ export default function Quote() {
   }
 
   return (
-    <div className="section-pad">
-      <div className="max-w-6xl mx-auto">
-        <SectionHeading eyebrow="Get a Quote" title="Give Us the Details, Get a Real Price Back" center={false} />
+    <div>
+      <div className="relative overflow-hidden text-center py-16 px-6 bg-cover bg-center" style={{ backgroundImage: "url('/images/quote-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-navy/80" />
+        <div className="relative max-w-2xl mx-auto">
+          <p className="text-xs uppercase tracking-[0.16em] text-white/60 font-semibold mb-3">Get a Quote</p>
+          <h1 className="text-2xl sm:text-4xl font-bold text-white">Give Us the Details, Get a Real Price Back</h1>
+          <div className="mt-5 h-[3px] w-16 bg-gradient-to-r from-brandred to-white/40 rounded-full mx-auto" />
+        </div>
+      </div>
 
-        <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr] mt-8">
+      <div className="section-pad">
+      <div className="max-w-6xl mx-auto">
+
+        <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
           <Card className="p-6">
             <form onSubmit={handleSubmit} className="grid gap-5">
               <div className="grid gap-5 sm:grid-cols-2">
@@ -62,6 +70,7 @@ export default function Quote() {
                   <select value={form.service} onChange={update('service')} className={`${inputBase} appearance-none bg-white`}>
                     <option value="">Select a service</option>
                     {services.map((s) => <option key={s.slug} value={s.slug}>{s.title}</option>)}
+                    <option value="other">Other (specify below)</option>
                   </select>
                 </div>
               </div>
@@ -106,6 +115,7 @@ export default function Quote() {
             ))}
           </div>
         </div>
+      </div>
       </div>
     </div>
   )

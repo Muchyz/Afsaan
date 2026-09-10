@@ -6,10 +6,10 @@ export default function SectionHeading({ eyebrow, title, subtitle, center = true
           {eyebrow}
         </p>
       )}
-      <h2 className={`text-3xl md:text-4xl font-bold mb-3 ${light ? 'text-white' : 'text-navy'}`}>
+      <h2 className={`text-3xl md:text-5xl font-extrabold mb-4 leading-tight ${light ? 'text-white' : 'text-navy'}`}>
         {title}
       </h2>
-      {center && <div className="fingerprint-divider mx-auto mb-4" />}
+      <div className={`fingerprint-divider mb-4 ${center ? 'mx-auto' : ''}`} />
       {subtitle && (
         <p className={`max-w-2xl mx-auto ${light ? 'text-gray-300' : 'text-slate'}`}>
           {subtitle}
