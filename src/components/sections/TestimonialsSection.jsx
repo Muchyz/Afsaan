@@ -27,9 +27,9 @@ export default function TestimonialsSection({ preview = false }) {
               {initials(t.name)}
             </span>
             <div>
-              <p className="text-sm text-navy font-bold leading-tight flex items-center gap-1.5">
+              <p className="text-sm text-navy font-bold leading-tight flex items-center gap-1">
                 {t.name}
-                <BadgeCheck size={15} fill="#2563eb" color="white" strokeWidth={2.5} />
+                <BadgeCheck size={18} fill="#2563eb" color="white" strokeWidth={2.5} className="shrink-0" />
               </p>
               <p className="text-xs text-slate/60 mt-0.5">{t.location}</p>
             </div>
