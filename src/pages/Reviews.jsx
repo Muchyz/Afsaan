@@ -3,7 +3,7 @@ import TestimonialsSection from '../components/sections/TestimonialsSection'
 
 const stats = [
   { icon: Star, value: '4.9/5', label: 'Average rating' },
-  { icon: Users, value: '20+', label: 'Happy clients' },
+  { icon: Users, value: '10k+', label: 'Happy clients' },
   { icon: ThumbsUp, value: '95%', label: 'Repeat & referred' },
 ]
 
@@ -26,7 +26,7 @@ export default function Reviews() {
           From homeowners to hardware suppliers, from Nakuru to the Gulf, here's what people say after the job is actually done.
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8 sm:gap-12 mt-8 mb-12 pb-10 border-b border-slate/10">
+        <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mt-6 mb-8 pb-6 border-b border-slate/10">
           {stats.map(({ icon: Icon, value, label }) => (
             <div key={label} className="flex items-center gap-3">
               <span className="flex items-center justify-center w-10 h-10 rounded-full bg-navy/5">
