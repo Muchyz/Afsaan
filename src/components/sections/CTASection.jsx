@@ -5,11 +5,12 @@ import { business } from '../../data/content'
 export default function CTASection() {
   return (
     <div
-  className="relative text-white text-center py-16 px-6 overflow-hidden"
+  className="relative text-white text-center py-16 px-6 overflow-hidden mx-4 mb-6 rounded-2xl md:mx-0 md:mb-0 md:rounded-none"
   style={{
-    backgroundImage: "linear-gradient(rgba(15,15,15,0.65), rgba(15,15,15,0.65)), url('/images/welding-bg.jpg')",
+    backgroundImage: "url('/images/welding-bg.jpg')",
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    textShadow: '0 2px 8px rgba(0,0,0,0.85)',
   }}
 >
       <div className="absolute inset-0 opacity-[0.06] pointer-events-none" style={{ backgroundImage: 'repeating-linear-gradient(45deg, white 0px, white 1px, transparent 1px, transparent 18px)' }} />
