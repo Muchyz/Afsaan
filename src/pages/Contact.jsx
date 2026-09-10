@@ -21,13 +21,13 @@ export default function Contact() {
   return (
     <div>
       {/* Page hero band, matching Densco's page-hero--contact */}
-      <div className="relative bg-gradient-to-br from-navy via-navy to-navy-dark overflow-hidden text-center py-16 px-6">
-        <div className="absolute inset-0 bg-[linear-gradient(115deg,transparent_0%,rgba(255,255,255,0.05)_50%,transparent_100%)]" />
+      <div className="relative overflow-hidden text-center py-16 px-6 bg-cover bg-center" style={{ backgroundImage: "url('/images/contact-hero.jpg')" }}>
+        <div className="absolute inset-0 bg-navy/80" />
         <div className="relative max-w-2xl mx-auto">
           <p className="text-xs uppercase tracking-[0.16em] text-white/60 font-semibold mb-3">Contact</p>
           <h1 className="text-2xl sm:text-4xl font-bold text-white">Tell Us What You Need Built or Painted</h1>
           <div className="mt-5 h-[3px] w-16 bg-gradient-to-r from-brandred to-white/40 rounded-full mx-auto" />
-          <p className="max-w-md mx-auto text-sm text-white/70 mt-5">
+          <p className="max-w-md mx-auto text-sm text-white/90 mt-6 bg-white/10 backdrop-blur-sm border border-white/20 rounded-xl px-5 py-4 shadow-lg">
             Send us your idea, a photo of the space, or a rough size — we'll come back with honest advice and a fixed quote before any work begins.
           </p>
         </div>

@@ -36,7 +36,7 @@ export default function Quote() {
       <div className="max-w-6xl mx-auto">
 
         <div className="grid gap-8 lg:grid-cols-[1.6fr_1fr]">
-          <Card className="p-6">
+          <Card className="p-6 !rounded-[20px] !shadow-[0_12px_30px_rgba(27,58,92,0.14)] hover:!shadow-[0_20px_44px_rgba(27,58,92,0.22)] hover:!-translate-y-1">
             <form onSubmit={handleSubmit} className="grid gap-5">
               <div className="grid gap-5 sm:grid-cols-2">
                 <div>
