@@ -9,8 +9,8 @@ export default function TestimonialsSection({ preview = false }) {
   return (
     <div className="grid gap-6 md:grid-cols-3">
       {list.map((t) => (
-        <Card key={t.name} className="p-6 relative overflow-visible">
-          <Quote size={40} className="absolute -top-2 -right-1 text-navy/5" fill="currentColor" strokeWidth={0} />
+        <Card key={t.name} className="p-6 relative overflow-visible !rounded-[20px] !shadow-[0_12px_30px_rgba(27,58,92,0.14)] !border-0 hover:!shadow-[0_20px_44px_rgba(27,58,92,0.22)] hover:!-translate-y-1.5">
+          <Quote size={32} className="absolute top-4 right-4 text-navy/[0.04]" fill="currentColor" strokeWidth={0} />
 
           <div className="flex gap-0.5 text-amber-500 drop-shadow-sm relative">
             {Array.from({ length: 5 }).map((_, i) => (
@@ -27,9 +27,9 @@ export default function TestimonialsSection({ preview = false }) {
               {initials(t.name)}
             </span>
             <div>
-              <p className="text-sm text-navy font-bold leading-tight flex items-center gap-1">
+              <p className="text-sm text-navy font-bold leading-snug">
                 {t.name}
-                <BadgeCheck size={18} fill="#2563eb" color="white" strokeWidth={2.5} className="shrink-0" />
+                <BadgeCheck size={16} fill="#2563eb" color="white" strokeWidth={2.5} className="inline-block ml-1 -mb-0.5 shrink-0" />
               </p>
               <p className="text-xs text-slate/60 mt-0.5">{t.location}</p>
             </div>
