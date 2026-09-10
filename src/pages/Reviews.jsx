@@ -2,14 +2,14 @@ import { Star, Users, ThumbsUp } from 'lucide-react'
 import TestimonialsSection from '../components/sections/TestimonialsSection'
 
 const stats = [
-  { icon: Star, value: '4.9/5', label: 'Average rating' },
-  { icon: Users, value: '10k+', label: 'Happy clients' },
-  { icon: ThumbsUp, value: '95%', label: 'Repeat & referred' },
+  { icon: Star, value: '4.9/5', label: 'Average rating', color: 'text-amber-500', fill: 'currentColor' },
+  { icon: Users, value: '10k+', label: 'Happy clients', color: 'text-blue-600', fill: 'currentColor' },
+  { icon: ThumbsUp, value: '95%', label: 'Repeat & referred', color: 'text-blue-600', fill: 'currentColor' },
 ]
 
 export default function Reviews() {
   return (
-    <div className="section-pad">
+    <div className="section-pad !pt-8">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-4">
           <span className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-brandred bg-brandred/10 px-3 py-1.5 rounded-full">
@@ -27,10 +27,10 @@ export default function Reviews() {
         </p>
 
         <div className="flex flex-wrap justify-center gap-6 sm:gap-10 mt-6 mb-8 pb-6 border-b border-slate/10">
-          {stats.map(({ icon: Icon, value, label }) => (
+          {stats.map(({ icon: Icon, value, label, color, fill }) => (
             <div key={label} className="flex items-center gap-3">
               <span className="flex items-center justify-center w-10 h-10 rounded-full bg-navy/5">
-                <Icon size={18} className="text-navy" />
+                <Icon size={18} className={color} fill={fill} strokeWidth={fill ? 0 : 2} />
               </span>
               <div className="text-left">
                 <p className="text-navy font-extrabold text-xl leading-none">{value}</p>
