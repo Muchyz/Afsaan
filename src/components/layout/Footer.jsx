@@ -93,7 +93,7 @@ export default function Footer() {
             </li>
             <li className="flex items-center gap-3">
               <span className="bg-white/10 p-2 rounded-full"><Mail size={15} className="text-sky" /></span>
-              @afsaan_weldersnpainters
+              hassankokonya669@gmail.com
             </li>
             <li className="flex items-start gap-3">
               <span className="bg-white/10 p-2 rounded-full mt-0.5"><MapPin size={15} className="text-sky" /></span>
