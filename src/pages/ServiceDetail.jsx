@@ -1,5 +1,5 @@
 import { useParams, Link } from 'react-router-dom'
-import { ArrowUpRight, ArrowLeft, Ruler, Clock, Check, MessageCircle, Hammer, Truck } from 'lucide-react'
+import { ArrowUpRight, ArrowLeft, Ruler, Clock, Check, MessageCircle, Hammer, Truck, Search, Wrench, PaintRoller, ClipboardCheck } from 'lucide-react'
 import { services, business } from '../data/content'
 import { iconMap } from '../data/icons'
 import Card from '../components/ui/Card'
@@ -21,7 +21,18 @@ const fallbackProcessSteps = [
   { title: 'Installation & Handover', text: 'We deliver and install on site, or hand over a ready piece — either way, the job isn\u2019t done until you\u2019re satisfied.' },
 ]
 
-const processIcons = [MessageCircle, Hammer, Truck]
+function getStepIcon(title = '') {
+  const t = title.toLowerCase()
+  if (t.includes('inspect') || t.includes('survey') || t.includes('walkthrough') || t.includes('assess')) return Search
+  if (t.includes('measur') || t.includes('calculat') || t.includes('load')) return Ruler
+  if (t.includes('rust') || t.includes('treat') || t.includes('prime') || t.includes('priming') || t.includes('prep')) return Wrench
+  if (t.includes('fabricat') || t.includes('build') || t.includes('weld')) return Hammer
+  if (t.includes('paint') || t.includes('coat') || t.includes('topcoat') || t.includes('finish') || t.includes('spray')) return PaintRoller
+  if (t.includes('install') || t.includes('delivery') || t.includes('deliver')) return Truck
+  if (t.includes('handover') || t.includes('complet')) return ClipboardCheck
+  if (t.includes('consult') || t.includes('intake') || t.includes('quote') || t.includes('message')) return MessageCircle
+  return Hammer
+}
 
 export default function ServiceDetail() {
   const { slug } = useParams()
@@ -118,7 +129,7 @@ export default function ServiceDetail() {
           <h2 className="text-2xl md:text-3xl font-bold mb-10 text-navy text-center">From First Message to Finished {service.title}</h2>
           <div className="grid gap-5 md:grid-cols-3">
             {activeSteps.map((p, i) => {
-              const StepIcon = processIcons[i] || processIcons[processIcons.length - 1]
+              const StepIcon = getStepIcon(p.title)
               return (
               <div key={p.title} className="bg-white rounded-2xl shadow-lg shadow-slate/10 p-5 text-center">
                 <div className="w-12 h-12 rounded-full bg-navy flex items-center justify-center mx-auto">
