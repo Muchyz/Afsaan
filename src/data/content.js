@@ -170,9 +170,16 @@ export const testimonials = [
 ]
 
 export const faqs = [
-  { q: 'Do you travel outside Nakuru for jobs?', a: 'Yes. We take jobs across the wider region. travel and accommodation for out-of-town jobs is factored into the quote.' },
+  { q: 'Do you travel outside Nakuru for jobs?', a: 'Yes. We take jobs across the wider region. Travel and accommodation for out-of-town jobs is factored into the quote.' },
   { q: 'How does payment work?', a: 'A deposit secures materials and scheduling, with the balance paid on completion and your approval of the finished work.' },
-  { q: 'Can I send a photo of a design I like instead of describing it?', a: 'Yes. reference photos are the fastest way to get an accurate quote. Send them along with rough measurements.' },
-  { q: 'Do you offer any warranty on the welding or paint work?', a: 'Structural welds and paint finish are covered against workmanship defects for a period after handover. ask us for the specifics for your job type.' },
-  { q: 'How long does a typical gate take?', a: 'Most gates are ready within 3–7 days from confirmed measurements and deposit, depending on size and design complexity.' },
+  { q: 'Can I send a photo of a design I like instead of describing it?', a: 'Yes. Reference photos are the fastest way to get an accurate quote. Send them along with rough measurements.' },
+  { q: 'Do you offer any warranty on the welding or paint work?', a: 'Structural welds and paint finish are covered against workmanship defects for a period after handover. Ask us for the specifics for your job type.' },
+  { q: 'How long does a typical gate take?', a: 'Most gates are ready within 3-7 days from confirmed measurements and deposit, depending on size and design complexity.' },
+  { q: "I'm based outside Kenya. Can I still order a build for my family's property?", a: "Yes, this is common. We work over WhatsApp, agree the design and quote, and send progress photos at each stage so you can approve work remotely before it's installed." },
+  { q: 'Is there a minimum job size you accept?', a: "No fixed minimum. We take on anything from a single window grill to full compound fencing, though very small jobs may carry a callout fee depending on location." },
+  { q: 'Can you supply gates or grills without installing them, for resale?', a: 'Yes, we supply hardware shops and retailers with fabricated products in bulk. Contact us directly to discuss wholesale pricing and delivery.' },
+  { q: 'What steel gauge and paint do you use?', a: 'We size steel gauge to the job (heavier gauge for gates and structural work, lighter for decorative grills) and use rust-resistant primer with weather-grade topcoat as standard.' },
+  { q: 'Can you match an existing design already on my property?', a: "Yes. Send photos or measurements of the existing work and we'll match the pattern, spacing, and finish as closely as possible." },
+  { q: 'Do you handle both fabrication and painting, or just one?', a: 'Both. Most clients have us design, weld, and paint as one job, but we also take painting-only or welding-only work if that\'s all you need.' },
+  { q: 'How quickly do you respond to a quote request?', a: 'We typically reply on WhatsApp within a few hours during business days. Sending your location, rough size, and any reference photos upfront speeds this up.' },
 ]
