@@ -7,15 +7,20 @@ import Button from '../components/ui/Button'
 import NotFound from './NotFound'
 
 function getIncludedItems(service) {
+  const isPainting = service.category === 'painting'
   return [
-    'Free on-site consultation and measurement',
-    'Fixed, written quote before any work begins',
-    `Materials used: ${service.material}`,
-    `Typical turnaround: ${service.turnaround}`,
-    service.category === 'painting'
-      ? 'Rust treatment and prep included, not just topcoat'
-      : 'Engineered and fabricated to hold real-world load',
-    'Clean handover and after-completion support',
+    `Materials: ${service.material}`,
+    `Timeline: ${service.turnaround}`,
+    isPainting
+      ? 'Rust removal and surface prep before any topcoat goes on'
+      : 'Structural fabrication engineered for real-world load, not guesswork',
+    isPainting
+      ? 'Weather-resistant finish built to handle sun, rain, and daily wear'
+      : 'Every weld and joint finished to hold up under daily use',
+    'Fixed, written quote before any work begins — no surprise costs',
+    service.turnaround.toLowerCase().includes('quoted')
+      ? `Free on-site assessment to scope your ${service.title.toLowerCase()} job`
+      : `Free on-site consultation for your ${service.title.toLowerCase()} job`,
   ]
 }
 
