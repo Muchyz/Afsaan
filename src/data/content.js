@@ -62,9 +62,46 @@ export const process = [
 ]
 
 export const testimonials = [
-  { name: 'J. Mwangi', location: 'Nakuru', quote: 'The sliding gate they built for our compound has held up perfectly for over a year — clean weld work and the paint hasn\u2019t chipped.' },
-  { name: 'S. Wanjiru', location: 'Njoro', quote: 'Had our whole house repainted and a staircase rebuilt in the same week. Both jobs were done on the timeline we agreed.' },
-  { name: 'D. Otieno', location: 'Nakuru', quote: 'Ordered a cow shed frame for the farm. Solid steel work, and they were upfront about cost from the first conversation.' },
+  {
+    name: 'J. Mwangi',
+    location: 'Nakuru',
+    quote: "The sliding gate they built for our compound has held up perfectly for over a year — clean weld work and the paint hasn't chipped.",
+  },
+  {
+    name: 'S. Wanjiru',
+    location: 'Njoro',
+    quote: 'Had our whole house repainted and a staircase rebuilt in the same week. Both jobs were done on the timeline we agreed.',
+  },
+  {
+    name: 'Fatima Al-Harthy',
+    location: 'Muscat, Oman (built in Nakuru)',
+    quote: "I was skeptical about ordering gates and burglar proofing for my parents' house from abroad, but they sent photos at every stage and the final work matched exactly what we discussed on WhatsApp.",
+  },
+  {
+    name: 'David Kiplangat',
+    location: 'Eldoret',
+    quote: 'We supply our hardware shop with their fabricated window frames and gate hinges. Consistent quality, and they never miss a delivery date.',
+  },
+  {
+    name: 'Amina Yusuf',
+    location: 'Dubai, UAE (project in Nakuru)',
+    quote: "Building a rental unit back home while working in Dubai was stressful until we found these guys. They handled the welding and painting for the whole compound wall without me setting foot in Kenya.",
+  },
+  {
+    name: 'Peter Ochieng',
+    location: 'Molo',
+    quote: 'My brother recommended them for our family plot. The workmanship on the security grills is solid — no rattling, no rust after the rains.',
+  },
+  {
+    name: 'Grace Nyambura',
+    location: 'Nakuru Town',
+    quote: 'As a single woman managing a construction project alone, I appreciated how patiently they explained every cost before starting. No hidden charges, no pressure.',
+  },
+  {
+    name: 'Coastline Hardware Ltd',
+    location: 'Nakuru (B2B supplier partner)',
+    quote: "We've stocked their welded products — gates, grills, and staircase frames — in our shop for two years now. Our customers keep coming back for that brand specifically.",
+  },
 ]
 
 export const faqs = [
