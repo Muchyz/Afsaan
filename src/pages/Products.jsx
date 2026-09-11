@@ -7,6 +7,8 @@ const categoryLabels = {
   kiosks: 'Kiosks',
   pergolas: 'Pergolas',
   containers: 'Container Conversions',
+  watertanks: 'Water Tank Stands',
+  braai: 'Braai & BBQ Stands',
 }
 
 function ProductCard({ p }) {
