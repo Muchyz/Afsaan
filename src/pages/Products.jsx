@@ -3,6 +3,7 @@ import { products, business } from '../data/content'
 const categoryLabels = {
   gates: 'Gates',
   windows: 'Windows',
+  staircases: 'Staircases',
 }
 
 function ProductCard({ p }) {
