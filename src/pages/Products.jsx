@@ -5,6 +5,8 @@ const categoryLabels = {
   windows: 'Windows',
   staircases: 'Staircases',
   kiosks: 'Kiosks',
+  pergolas: 'Pergolas',
+  containers: 'Container Conversions',
 }
 
 function ProductCard({ p }) {

@@ -25,6 +25,8 @@ const categoryLabels = {
   windows: 'Windows',
   staircases: 'Staircases',
   kiosks: 'Kiosks',
+  pergolas: 'Pergolas',
+  containers: 'Container Conversions',
 }
 
 export default function Gallery() {
