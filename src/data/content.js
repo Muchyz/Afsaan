@@ -62,6 +62,14 @@ export const products = [
     image: '/images/products/gate-black-diamond-lattice.jpg',
   },
   {
+    id: 'window-bay-grill',
+    title: 'Bay Window Security Grill',
+    category: 'windows',
+    material: 'Steel tube frame, cross-bar grill pattern, primed finish',
+    availability: 'Made to order, per window size',
+    image: '/images/products/window-bay-grill.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
