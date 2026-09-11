@@ -40,6 +40,15 @@ function ProductCard({ p }) {
 export default function Products() {
   const categories = [...new Set(products.map((p) => p.category))]
 
+  const scrollToCategory = (cat) => {
+    const el = document.getElementById(`cat-${cat}`)
+    if (el) {
+      const offset = 108
+      const top = el.getBoundingClientRect().top + window.scrollY - offset
+      window.scrollTo({ top, behavior: 'smooth' })
+    }
+  }
+
   return (
     <div className="container-page py-12 md:py-16">
       <p className="font-semibold uppercase tracking-wide text-sm mb-2 text-brandred text-center">Ready-Built Designs</p>
@@ -48,8 +57,22 @@ export default function Products() {
         In-stock and quick-turnaround designs, ready to order online or view at our shop.
       </p>
 
+      <div className="sticky top-[104px] z-40 bg-offwhite/95 backdrop-blur-sm -mx-4 px-4 py-3 mb-8 border-b border-slate/10 overflow-x-auto">
+        <div className="flex gap-2 w-max">
+          {categories.map((cat) => (
+            <button
+              key={cat}
+              onClick={() => scrollToCategory(cat)}
+              className="border border-slate/20 text-slate px-3 py-1.5 text-xs rounded-full font-semibold whitespace-nowrap hover:border-brandred hover:text-brandred transition"
+            >
+              {categoryLabels[cat] || cat}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {categories.map((cat) => (
-        <div key={cat} className="mb-14 last:mb-0">
+        <div key={cat} id={`cat-${cat}`} className="mb-14 last:mb-0 scroll-mt-20">
           <h2 className="text-xl md:text-2xl font-bold text-navy mb-5 border-l-4 border-brandred pl-3">
             {categoryLabels[cat] || cat}
           </h2>
