@@ -28,6 +28,49 @@ export const business = {
   hours: 'Mon – Sat, 8:00 AM – 6:00 PM',
 }
 
+export const products = [
+  {
+    id: 'gate-ornate-scroll',
+    title: 'Ornate Scroll Gate',
+    category: 'gates',
+    material: 'Steel, scrollwork detail, primed and painted',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-ornate-scroll.jpg',
+  },
+  {
+    id: 'gate-grey-panel',
+    title: 'Grey Panel Gate',
+    category: 'gates',
+    material: 'Steel box section, matte grey finish',
+    availability: 'Made to order, 4 – 6 days',
+    image: '/images/products/gate-grey-panel.jpg',
+  },
+  {
+    id: 'gate-arched-black',
+    title: 'Arched Black Gate',
+    category: 'gates',
+    material: 'Steel bar, arched top, black finish',
+    availability: 'Made to order, 5 – 7 days',
+    image: '/images/products/gate-arched-black.jpg',
+  },
+  {
+    id: 'gate-black-diamond-lattice',
+    title: 'Black Diamond Lattice Gate',
+    category: 'gates',
+    material: 'Steel, diamond lattice panels, brass-tone accents, arched black finish',
+    availability: 'Made to order, 6 – 9 days',
+    image: '/images/products/gate-black-diamond-lattice.jpg',
+  },
+  {
+    id: 'gate-geometric-primer',
+    title: 'Geometric Primer Gate',
+    category: 'gates',
+    material: 'Steel frame, primer coat (paint on request)',
+    availability: 'Made to order, 4 – 6 days',
+    image: '/images/products/gate-geometric-primer.jpg',
+  },
+]
+
 export const heroImage = unsplash('photo-1455165814004-1126a7199f9b')
 export const heroImages = [
   heroWelderSparks,

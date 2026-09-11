@@ -2,7 +2,7 @@ import { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import {
   Menu, X, Phone, ArrowRight, Home, Info, Wrench,
-  Image, Quote, HelpCircle, Mail,
+  Image, Quote, HelpCircle, Mail, ShoppingBag,
 } from 'lucide-react'
 import logo from '../../assets/images/logo-navbar.png'
 import logoBadge from '../../assets/images/logo.png'
@@ -11,6 +11,7 @@ import { business } from '../../data/content'
 const links = [
   { to: '/', label: 'Home', icon: Home },
   { to: '/services', label: 'Services', icon: Wrench },
+  { to: '/products', label: 'Shop', icon: ShoppingBag },
   { to: '/gallery', label: 'Gallery', icon: Image },
   { to: '/about', label: 'About', icon: Info },
   { to: '/reviews', label: 'Reviews', icon: Quote },

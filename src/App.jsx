@@ -5,6 +5,7 @@ import Footer from './components/layout/Footer'
 import WhatsAppFloat from './components/layout/WhatsAppFloat'
 import Home from './pages/Home'
 import Services from './pages/Services'
+import Products from './pages/Products'
 import ServiceDetail from './pages/ServiceDetail'
 import Gallery from './pages/Gallery'
 import About from './pages/About'
@@ -29,6 +30,7 @@ export default function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/products" element={<Products />} />
           <Route path="/services/:slug" element={<ServiceDetail />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/about" element={<About />} />
