@@ -70,6 +70,14 @@ export const products = [
     image: '/images/products/window-bay-grill.jpg',
   },
   {
+    id: 'window-round-porthole',
+    title: 'Round Porthole Window',
+    category: 'windows',
+    material: 'Steel circular frame, opening casement, primed finish',
+    availability: 'Made to order, per window size',
+    image: '/images/products/window-round-porthole.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
