@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
-import { services, products } from '../data/content'
+import { products } from '../data/content'
 import SectionHeading from '../components/ui/SectionHeading'
 
 const captionPool = [
@@ -31,27 +31,13 @@ export default function Gallery() {
   const [active, setActive] = useState('all')
   const [lightboxIndex, setLightboxIndex] = useState(null)
 
-  const serviceItems = useMemo(() => {
-    const all = services.flatMap((s) => [s.img, ...s.gallery].map((src, i) => ({ src, title: s.title, slug: s.slug, key: `svc-${s.slug}-${i}`, caption: null })))
-    const seen = new Set()
-    return all.filter((item) => {
-      const k = `${item.slug}:${item.src}`
-      if (seen.has(k)) return false
-      seen.add(k)
-      return true
-    })
-  }, [])
-
-  const productItems = useMemo(() => (
-    products.map((p) => ({ src: p.image, title: p.title, slug: p.category, key: `prod-${p.id}`, caption: captionFor(p.id) }))
+  const allItems = useMemo(() => (
+    products.map((p) => ({ src: p.image, title: p.title, slug: p.category, key: `prod-${p.id}`, caption: p.availability && p.availability.toLowerCase().includes('company') ? p.availability : captionFor(p.id) }))
   ), [])
-
-  const allItems = [...productItems, ...serviceItems]
 
   const filterOptions = [
     { key: 'all', label: 'All' },
     ...Object.entries(categoryLabels).map(([key, label]) => ({ key, label })),
-    ...services.map((s) => ({ key: s.slug, label: s.title })),
   ]
 
   const items = active === 'all' ? allItems : allItems.filter((i) => i.slug === active)
@@ -86,12 +72,10 @@ export default function Gallery() {
               className="mb-3 block w-full break-inside-avoid overflow-hidden rounded-xl relative group text-left"
             >
               <img src={item.src} alt={item.title} className="w-full object-cover" loading="lazy" />
-              {item.caption && (
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-2">
-                  <p className="text-white text-xs font-semibold">{item.title}</p>
-                  <p className="text-white/80 text-[11px]">{item.caption}</p>
-                </div>
-              )}
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent px-3 py-2">
+                <p className="text-white text-xs font-semibold">{item.title}</p>
+                <p className="text-white/80 text-[11px]">{item.caption}</p>
+              </div>
             </button>
           ))}
         </div>
@@ -122,7 +106,7 @@ export default function Gallery() {
             <img src={active_item.src} alt={active_item.title} className="w-full max-h-[80vh] object-contain rounded-lg" />
             <div className="text-center mt-3">
               <p className="text-white font-semibold">{active_item.title}</p>
-              {active_item.caption && <p className="text-white/70 text-sm">{active_item.caption}</p>}
+              <p className="text-white/70 text-sm">{active_item.caption}</p>
             </div>
           </div>
 
