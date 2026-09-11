@@ -190,6 +190,14 @@ export const products = [
     image: '/images/products/staircase-spiral-black-modern.jpg',
   },
   {
+    id: 'staircase-raw-spiral-workshop',
+    title: 'Raw Steel Spiral Staircase',
+    category: 'staircases',
+    material: 'Steel frame, curved stringer, chrome handrail, raw/primed finish',
+    availability: 'Fabricated and finished for a company building, made to order',
+    image: '/images/products/staircase-raw-spiral-workshop.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
