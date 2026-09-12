@@ -578,6 +578,15 @@ export const products = [
     image: '/images/products/container-charcoal-copper-trim-door.jpg',
   },
   {
+    id: 'gate-timber-navy-sliding-pedestrian',
+    title: 'Timber-Look Sliding Gate with Pedestrian Door',
+    category: 'gates',
+    price: 'KES 145,000',
+    material: 'Steel frame, wood-look panel finish, navy trim, integrated pedestrian door',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-timber-navy-sliding-pedestrian.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
