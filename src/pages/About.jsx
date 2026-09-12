@@ -29,7 +29,7 @@ export default function About() {
           <p className="text-sm text-sky font-semibold">About</p>
           <h1 className="mt-2 max-w-xl font-extrabold text-white text-3xl md:text-5xl">{business.name}</h1>
           <p className="mt-4 max-w-md text-sm leading-relaxed text-gray-200">
-            {business.tagline} — a welding and painting outfit based in {business.location}, building gates,
+            {business.tagline} — a welding and painting outfit based in {business.location}, {business.serviceArea.toLowerCase()}, building gates,
             structures, and finishes that hold up past the first rainy season.
           </p>
         </div>

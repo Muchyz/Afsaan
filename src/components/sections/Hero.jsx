@@ -54,7 +54,7 @@ export default function Hero() {
         >
           <div className="flex items-center gap-2">
             <span className="w-5 h-[2px] bg-brandred flex-shrink-0" />
-            <span className="text-sky font-bold uppercase tracking-widest" style={{ fontSize: '9px' }}>{business.location}</span>
+            <span className="text-sky font-bold uppercase tracking-widest" style={{ fontSize: '9px' }}>{business.location} · Serving Nairobi &amp; Kenya-Wide</span>
           </div>
 
           <h1 className="font-extrabold text-white tracking-tight leading-none" style={{ fontSize: 'clamp(1.8rem, 8vw, 2.8rem)' }}>
@@ -63,7 +63,7 @@ export default function Hero() {
           </h1>
 
           <p className="text-gray-300 leading-snug" style={{ fontSize: '11px' }}>
-            Gates, staircases, roofing &amp; full house painting across {business.location} — measured on site, fixed quotes, no surprises.
+            Gates, staircases, roofing &amp; full house painting — based in {business.location}, serving Nairobi &amp; clients across Kenya. Measured on site, fixed quotes, no surprises.
           </p>
 
           <div className="flex gap-2">
