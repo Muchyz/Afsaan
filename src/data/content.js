@@ -35,7 +35,7 @@ export const products = [
     category: 'gates',
     material: 'Steel, scrollwork detail, primed and painted',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-ornate-scroll.jpg',
+    image: '/images/products/gate-ornate-scroll.webp',
   },
   {
     id: 'gate-grey-panel',
@@ -44,7 +44,7 @@ export const products = [
     price: 'KES 85,000',
     material: 'Steel box section, matte grey finish',
     availability: 'Made to order, 4 – 6 days',
-    image: '/images/products/gate-grey-panel.jpg',
+    image: '/images/products/gate-grey-panel.webp',
   },
   {
     id: 'gate-arched-black',
@@ -52,7 +52,7 @@ export const products = [
     category: 'gates',
     material: 'Steel bar, arched top, black finish',
     availability: 'Made to order, 5 – 7 days',
-    image: '/images/products/gate-arched-black.jpg',
+    image: '/images/products/gate-arched-black.webp',
   },
   {
     id: 'gate-black-diamond-lattice',
@@ -60,7 +60,7 @@ export const products = [
     category: 'gates',
     material: 'Steel, diamond lattice panels, brass-tone accents, arched black finish',
     availability: 'Made to order, 6 – 9 days',
-    image: '/images/products/gate-black-diamond-lattice.jpg',
+    image: '/images/products/gate-black-diamond-lattice.webp',
   },
   {
     id: 'window-bay-grill',
@@ -68,7 +68,7 @@ export const products = [
     category: 'windows',
     material: 'Steel tube frame, cross-bar grill pattern, primed finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-bay-grill.jpg',
+    image: '/images/products/window-bay-grill.webp',
   },
   {
     id: 'window-round-porthole',
@@ -76,7 +76,7 @@ export const products = [
     category: 'windows',
     material: 'Steel circular frame, opening casement, primed finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-round-porthole.jpg',
+    image: '/images/products/window-round-porthole.webp',
   },
   {
     id: 'gate-wave-panel',
@@ -84,7 +84,7 @@ export const products = [
     category: 'gates',
     material: 'Steel frame, curved wave accent bars, primer finish',
     availability: 'Made to order, 4 – 6 days',
-    image: '/images/products/gate-wave-panel.jpg',
+    image: '/images/products/gate-wave-panel.webp',
   },
   {
     id: 'window-geometric-black',
@@ -92,7 +92,7 @@ export const products = [
     category: 'windows',
     material: 'Steel flat bar, geometric square pattern, black finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-geometric-black.jpg',
+    image: '/images/products/window-geometric-black.webp',
   },
   {
     id: 'window-diamond-lattice-sliding',
@@ -100,7 +100,7 @@ export const products = [
     category: 'windows',
     material: 'Steel frame, diamond lattice grill, sliding panels, grey finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-diamond-lattice-sliding.jpg',
+    image: '/images/products/window-diamond-lattice-sliding.webp',
   },
   {
     id: 'window-scroll-sliding',
@@ -108,7 +108,7 @@ export const products = [
     category: 'windows',
     material: 'Steel frame, decorative scrollwork grill, sliding panels, grey finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-scroll-sliding.jpg',
+    image: '/images/products/window-scroll-sliding.webp',
   },
   {
     id: 'window-modern-bars-grey',
@@ -116,7 +116,7 @@ export const products = [
     category: 'windows',
     material: 'Steel bar, asymmetric modern pattern, champagne/grey finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-modern-bars-grey.jpg',
+    image: '/images/products/window-modern-bars-grey.webp',
   },
   {
     id: 'window-stepped-raw',
@@ -124,7 +124,7 @@ export const products = [
     category: 'windows',
     material: 'Steel bar, stepped geometric frame, raw/primer finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-stepped-raw.jpg',
+    image: '/images/products/window-stepped-raw.webp',
   },
   {
     id: 'window-art-deco-black',
@@ -132,7 +132,7 @@ export const products = [
     category: 'windows',
     material: 'Steel bar, art deco fan and diamond pattern, black finish',
     availability: 'Made to order, per window size',
-    image: '/images/products/window-art-deco-black.jpg',
+    image: '/images/products/window-art-deco-black.webp',
   },
   {
     id: 'staircase-chrome-straight',
@@ -140,7 +140,7 @@ export const products = [
     category: 'staircases',
     material: 'Stainless steel balustrade, straight-run rail',
     availability: 'Made to order, per stairwell size',
-    image: '/images/products/staircase-chrome-straight.jpg',
+    image: '/images/products/staircase-chrome-straight.webp',
   },
   {
     id: 'staircase-chrome-dogleg',
@@ -148,7 +148,7 @@ export const products = [
     category: 'staircases',
     material: 'Stainless steel balustrade, dog-leg landing rail',
     availability: 'Made to order, per stairwell size',
-    image: '/images/products/staircase-chrome-dogleg.jpg',
+    image: '/images/products/staircase-chrome-dogleg.webp',
   },
   {
     id: 'staircase-geometric-balustrade',
@@ -156,7 +156,7 @@ export const products = [
     category: 'staircases',
     material: 'Raw steel frame, geometric baluster pattern',
     availability: 'Made to order, per stairwell size',
-    image: '/images/products/staircase-geometric-balustrade.jpg',
+    image: '/images/products/staircase-geometric-balustrade.webp',
   },
   {
     id: 'staircase-spiral-yellow',
@@ -164,7 +164,7 @@ export const products = [
     category: 'staircases',
     material: 'Steel frame, checker plate treads, yellow safety finish',
     availability: 'Made to order, per height and diameter',
-    image: '/images/products/staircase-spiral-yellow.jpg',
+    image: '/images/products/staircase-spiral-yellow.webp',
   },
   {
     id: 'staircase-spiral-grey',
@@ -172,7 +172,7 @@ export const products = [
     category: 'staircases',
     material: 'Steel frame, curved stringer, matte grey finish',
     availability: 'Made to order, per height and diameter',
-    image: '/images/products/staircase-spiral-grey.jpg',
+    image: '/images/products/staircase-spiral-grey.webp',
   },
   {
     id: 'staircase-spiral-honeycomb-dark',
@@ -180,7 +180,7 @@ export const products = [
     category: 'staircases',
     material: 'Steel frame, laser-cut honeycomb panel balustrade, dark finish',
     availability: 'Made to order, per height and diameter',
-    image: '/images/products/staircase-spiral-honeycomb-dark.jpg',
+    image: '/images/products/staircase-spiral-honeycomb-dark.webp',
   },
   {
     id: 'staircase-spiral-black-modern',
@@ -188,7 +188,7 @@ export const products = [
     category: 'staircases',
     material: 'Steel frame, slatted rail, timber-tread option, matte black finish',
     availability: 'Made to order, per height and diameter',
-    image: '/images/products/staircase-spiral-black-modern.jpg',
+    image: '/images/products/staircase-spiral-black-modern.webp',
   },
   {
     id: 'staircase-raw-spiral-workshop',
@@ -196,7 +196,7 @@ export const products = [
     category: 'staircases',
     material: 'Steel frame, curved stringer, chrome handrail, raw/primed finish',
     availability: 'Fabricated and finished for a company building, made to order',
-    image: '/images/products/staircase-raw-spiral-workshop.jpg',
+    image: '/images/products/staircase-raw-spiral-workshop.webp',
   },
   {
     id: 'kiosk-steel-watchman-hut',
@@ -204,7 +204,7 @@ export const products = [
     category: 'kiosks',
     material: 'Steel sheet and bar frame, security grill windows, raw/primed finish',
     availability: 'Made to order, per size',
-    image: '/images/products/kiosk-steel-watchman-hut.jpg',
+    image: '/images/products/kiosk-steel-watchman-hut.webp',
   },
   {
     id: 'kiosk-slatted-panel',
@@ -212,7 +212,7 @@ export const products = [
     category: 'kiosks',
     material: 'Steel sheet panels, vented top, primed finish',
     availability: 'Made to order, per size',
-    image: '/images/products/kiosk-slatted-panel.jpg',
+    image: '/images/products/kiosk-slatted-panel.webp',
   },
   {
     id: 'kiosk-grey-canopy',
@@ -220,7 +220,7 @@ export const products = [
     category: 'kiosks',
     material: 'Steel frame and panels, security grill door, canopy roof',
     availability: 'Made to order, per size',
-    image: '/images/products/kiosk-grey-canopy.jpg',
+    image: '/images/products/kiosk-grey-canopy.webp',
   },
   {
     id: 'kiosk-white-roller-shutter',
@@ -228,7 +228,7 @@ export const products = [
     category: 'kiosks',
     material: 'Steel frame, roller shutter door, canopy awning, painted finish',
     availability: 'Made to order, per size',
-    image: '/images/products/kiosk-white-roller-shutter.jpg',
+    image: '/images/products/kiosk-white-roller-shutter.webp',
   },
   {
     id: 'pergola-black-slatted-gate',
@@ -236,7 +236,7 @@ export const products = [
     category: 'pergolas',
     material: 'Steel frame, slatted roof and privacy screen, black finish',
     availability: 'Made to order, per span',
-    image: '/images/products/pergola-black-slatted-gate.jpg',
+    image: '/images/products/pergola-black-slatted-gate.webp',
   },
   {
     id: 'pergola-grey-carport',
@@ -244,7 +244,7 @@ export const products = [
     category: 'pergolas',
     material: 'Steel frame, slatted privacy screen, solid roof, grey finish',
     availability: 'Made to order, per span',
-    image: '/images/products/pergola-grey-carport.jpg',
+    image: '/images/products/pergola-grey-carport.webp',
   },
   {
     id: 'pergola-black-lattice',
@@ -252,7 +252,7 @@ export const products = [
     category: 'pergolas',
     material: 'Steel frame, lattice roof panel, slatted side screen, black finish',
     availability: 'Made to order, per span',
-    image: '/images/products/pergola-black-lattice.jpg',
+    image: '/images/products/pergola-black-lattice.webp',
   },
   {
     id: 'pergola-triangular-black',
@@ -260,7 +260,7 @@ export const products = [
     category: 'pergolas',
     material: 'Steel frame, triangular slatted supports, polycarbonate roof panels',
     availability: 'Made to order, per span',
-    image: '/images/products/pergola-triangular-black.jpg',
+    image: '/images/products/pergola-triangular-black.webp',
   },
   {
     id: 'container-cream-canopy',
@@ -268,7 +268,7 @@ export const products = [
     category: 'containers',
     material: '20ft shipping container conversion, steel canopy roof, cream finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-cream-canopy.jpg',
+    image: '/images/products/container-cream-canopy.webp',
   },
   {
     id: 'container-silver-serving-window',
@@ -276,7 +276,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, serving hatch and counter, silver finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-silver-serving-window.jpg',
+    image: '/images/products/container-silver-serving-window.webp',
   },
   {
     id: 'container-black-bar',
@@ -284,7 +284,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, fold-down bar counter, black finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-black-bar.jpg',
+    image: '/images/products/container-black-bar.webp',
   },
   {
     id: 'container-black-cabin',
@@ -292,7 +292,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, glazed awning windows, black finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-black-cabin.jpg',
+    image: '/images/products/container-black-cabin.webp',
   },
   {
     id: 'container-black-secure-door',
@@ -300,7 +300,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, reinforced locking bars, black finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-black-secure-door.jpg',
+    image: '/images/products/container-black-secure-door.webp',
   },
   {
     id: 'container-green-food-kiosk',
@@ -308,7 +308,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, fold-down serving counters, green finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-green-food-kiosk.jpg',
+    image: '/images/products/container-green-food-kiosk.webp',
   },
   {
     id: 'container-yellow-kiosk',
@@ -316,7 +316,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, serving hatch and counter, yellow finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-yellow-kiosk.jpg',
+    image: '/images/products/container-yellow-kiosk.webp',
   },
   {
     id: 'container-red-office',
@@ -324,7 +324,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, glazed doors and windows, red finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-red-office.jpg',
+    image: '/images/products/container-red-office.webp',
   },
   {
     id: 'container-white-cabin',
@@ -332,7 +332,7 @@ export const products = [
     category: 'containers',
     material: 'Shipping container conversion, sliding glass doors and windows, white finish',
     availability: 'Made to order, per size',
-    image: '/images/products/container-white-cabin.jpg',
+    image: '/images/products/container-white-cabin.webp',
   },
   {
     id: 'watertank-panel-tower',
@@ -340,7 +340,7 @@ export const products = [
     category: 'watertanks',
     material: 'Steel angle/tube frame, cross-braced for full-load stability',
     availability: 'Made to order, per tank size and height',
-    image: '/images/products/watertank-panel-tower.jpg',
+    image: '/images/products/watertank-panel-tower.webp',
   },
   {
     id: 'watertank-galvanized-frame',
@@ -348,7 +348,7 @@ export const products = [
     category: 'watertanks',
     material: 'Galvanized steel frame, cross-braced, rust-resistant finish',
     availability: 'Made to order, per tank size and height',
-    image: '/images/products/watertank-galvanized-frame.jpg',
+    image: '/images/products/watertank-galvanized-frame.webp',
   },
   {
     id: 'watertank-two-tier-platform',
@@ -356,7 +356,7 @@ export const products = [
     category: 'watertanks',
     material: 'Steel frame, dual platform levels, safety railing',
     availability: 'Made to order, per tank size and height',
-    image: '/images/products/watertank-two-tier-platform.jpg',
+    image: '/images/products/watertank-two-tier-platform.webp',
   },
   {
     id: 'braai-spit-roast-stand',
@@ -364,7 +364,7 @@ export const products = [
     category: 'braai',
     material: 'Steel frame, adjustable spit rod, raw finish',
     availability: 'Made to order',
-    image: '/images/products/braai-spit-roast-stand.jpg',
+    image: '/images/products/braai-spit-roast-stand.webp',
   },
   {
     id: 'braai-open-grill-stand',
@@ -372,7 +372,7 @@ export const products = [
     category: 'braai',
     material: 'Steel frame, mesh grill top, black finish',
     availability: 'Made to order',
-    image: '/images/products/braai-open-grill-stand.jpg',
+    image: '/images/products/braai-open-grill-stand.webp',
   },
   {
     id: 'braai-enclosed-smoker',
@@ -380,7 +380,7 @@ export const products = [
     category: 'braai',
     material: 'Steel body, chimney flue, two-tier grill racks, galvanized finish',
     availability: 'Made to order',
-    image: '/images/products/braai-enclosed-smoker.jpg',
+    image: '/images/products/braai-enclosed-smoker.webp',
   },
   {
     id: 'braai-canopy-grill',
@@ -388,7 +388,7 @@ export const products = [
     category: 'braai',
     material: 'Steel frame, fold-out side tables, canopy cover, black finish',
     availability: 'Made to order',
-    image: '/images/products/braai-canopy-grill.jpg',
+    image: '/images/products/braai-canopy-grill.webp',
   },
   {
     id: 'braai-double-station',
@@ -396,7 +396,7 @@ export const products = [
     category: 'braai',
     material: 'Steel body, hooded grill and side prep counter, black and steel finish',
     availability: 'Made to order',
-    image: '/images/products/braai-double-station.jpg',
+    image: '/images/products/braai-double-station.webp',
   },
   {
     id: 'braai-rim-fire-pit',
@@ -404,7 +404,7 @@ export const products = [
     category: 'braai',
     material: 'Repurposed steel rim, adjustable grill top, grey finish',
     availability: 'Made to order',
-    image: '/images/products/braai-rim-fire-pit.jpg',
+    image: '/images/products/braai-rim-fire-pit.webp',
   },
   {
     id: 'gate-grey-arched-panel',
@@ -413,7 +413,7 @@ export const products = [
     price: 'KES 78,000',
     material: 'Steel panel construction, riveted trim detail, grey finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-grey-arched-panel.jpg',
+    image: '/images/products/gate-grey-arched-panel.webp',
   },
   {
     id: 'gate-black-embossed-panel',
@@ -422,7 +422,7 @@ export const products = [
     price: 'KES 65,000',
     material: 'Steel panel construction, embossed pattern detail, black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-embossed-panel.jpg',
+    image: '/images/products/gate-black-embossed-panel.webp',
   },
   {
     id: 'gate-navy-studded-panel',
@@ -431,7 +431,7 @@ export const products = [
     price: 'KES 85,000',
     material: 'Steel panel construction, decorative stud detail, navy finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-navy-studded-panel.jpg',
+    image: '/images/products/gate-navy-studded-panel.webp',
   },
   {
     id: 'gate-orange-black-diamond',
@@ -440,7 +440,7 @@ export const products = [
     price: 'KES 78,000',
     material: 'Steel panel construction, diamond-textured panels, brass accents, orange and black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-orange-black-diamond.jpg',
+    image: '/images/products/gate-orange-black-diamond.webp',
   },
   {
     id: 'gate-black-orange-stripe',
@@ -449,7 +449,7 @@ export const products = [
     price: 'KES 95,000',
     material: 'Steel panel construction, orange bar accents, matte black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-orange-stripe.jpg',
+    image: '/images/products/gate-black-orange-stripe.webp',
   },
   {
     id: 'gate-copper-horse-panel',
@@ -458,7 +458,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel panel construction, laser-cut horse motif, copper and slat accents',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-copper-horse-panel.jpg',
+    image: '/images/products/gate-copper-horse-panel.webp',
   },
   {
     id: 'gate-black-gold-greek-key',
@@ -467,7 +467,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel panel construction, Greek key trim, gold accent bars, black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-gold-greek-key.jpg',
+    image: '/images/products/gate-black-gold-greek-key.webp',
   },
   {
     id: 'gate-copper-curved-slat',
@@ -476,7 +476,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel panel construction, curved black accent bands, copper slat finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-copper-curved-slat.jpg',
+    image: '/images/products/gate-copper-curved-slat.webp',
   },
   {
     id: 'gate-marble-effect-panel',
@@ -485,7 +485,7 @@ export const products = [
     price: 'KES 110,000',
     material: 'Steel panel construction, marble-effect finish, black slatted frame',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-marble-effect-panel.jpg',
+    image: '/images/products/gate-marble-effect-panel.webp',
   },
   {
     id: 'gate-timber-slat-black',
@@ -494,7 +494,7 @@ export const products = [
     price: 'KES 145,000',
     material: 'Steel frame, timber-look slat panels, gold trim, black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-timber-slat-black.jpg',
+    image: '/images/products/gate-timber-slat-black.webp',
   },
   {
     id: 'gate-white-black-curve',
@@ -503,7 +503,7 @@ export const products = [
     price: 'KES 110,000',
     material: 'Steel panel construction, bold curved accent, white and black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-white-black-curve.jpg',
+    image: '/images/products/gate-white-black-curve.webp',
   },
   {
     id: 'gate-brass-wildlife-panel',
@@ -512,7 +512,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel panel construction, brass wildlife motifs, floral trim detail',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-brass-wildlife-panel.jpg',
+    image: '/images/products/gate-brass-wildlife-panel.webp',
   },
   {
     id: 'gate-grey-vertical-slat-panel',
@@ -521,7 +521,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel frame, vertical slat panel design, grey finish, cut-out accents',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-grey-vertical-slat-panel.jpg',
+    image: '/images/products/gate-grey-vertical-slat-panel.webp',
   },
   {
     id: 'gate-diamond-pyramid-panel',
@@ -530,7 +530,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel frame, pyramid-textured panels, gold trim accents, black and grey finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-diamond-pyramid-panel.jpg',
+    image: '/images/products/gate-diamond-pyramid-panel.webp',
   },
   {
     id: 'gate-black-copper-slat-double-door',
@@ -539,7 +539,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel frame construction, copper-trimmed glass panel doors, black slat side accents',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-copper-slat-double-door.jpg',
+    image: '/images/products/gate-black-copper-slat-double-door.webp',
   },
   {
     id: 'gate-charcoal-arched-double-door',
@@ -548,7 +548,7 @@ export const products = [
     price: 'KES 85,000',
     material: 'Steel frame construction, arched top design, vertical bar handles, charcoal finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-charcoal-arched-double-door.jpg',
+    image: '/images/products/gate-charcoal-arched-double-door.webp',
   },
   {
     id: 'gate-black-scrollwork-tree-panel',
@@ -557,7 +557,7 @@ export const products = [
     price: 'KES 150,000',
     material: 'Steel construction, arched laser-cut scrollwork top, tree silhouette side panels, gold accent trim',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-scrollwork-tree-panel.jpg',
+    image: '/images/products/gate-black-scrollwork-tree-panel.webp',
   },
   {
     id: 'gate-black-diamond-lattice-copper-door',
@@ -566,7 +566,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel construction, diamond lattice panels with brass studs, copper-trimmed side door',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-diamond-lattice-copper-door.jpg',
+    image: '/images/products/gate-black-diamond-lattice-copper-door.webp',
   },
   {
     id: 'container-charcoal-copper-trim-door',
@@ -575,7 +575,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel gate construction, horizontal panel cladding, copper-trimmed door and window, charcoal finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/container-charcoal-copper-trim-door.jpg',
+    image: '/images/products/container-charcoal-copper-trim-door.webp',
   },
   {
     id: 'gate-timber-navy-sliding-pedestrian',
@@ -584,7 +584,7 @@ export const products = [
     price: 'KES 145,000',
     material: 'Steel frame, wood-look panel finish, navy trim, integrated pedestrian door',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-timber-navy-sliding-pedestrian.jpg',
+    image: '/images/products/gate-timber-navy-sliding-pedestrian.webp',
   },
   {
     id: 'gate-arched-timber-panel-studded',
@@ -593,7 +593,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel frame, arched top design, timber-look vertical slat panels, copper diamond stud accents',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-arched-timber-panel-studded.jpg',
+    image: '/images/products/gate-arched-timber-panel-studded.webp',
   },
   {
     id: 'gate-grey-embossed-wave-panel',
@@ -602,7 +602,7 @@ export const products = [
     price: 'KES 95,000',
     material: 'Steel panel construction, embossed wave and floral motif, scrollwork crest, grey finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-grey-embossed-wave-panel.jpg',
+    image: '/images/products/gate-grey-embossed-wave-panel.webp',
   },
   {
     id: 'gate-coral-slat-medallion-crossbar',
@@ -611,7 +611,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel vertical slat panels, coral finish, black Greek-key crossbar with central medallion',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-coral-slat-medallion-crossbar.jpg',
+    image: '/images/products/gate-coral-slat-medallion-crossbar.webp',
   },
   {
     id: 'gate-grey-arched-ornate-medallion-door',
@@ -620,7 +620,7 @@ export const products = [
     price: 'KES 75,000',
     material: 'Steel construction, arched top design, embossed medallion door panels, fleur-de-lis scrollwork accents, grey finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-grey-arched-ornate-medallion-door.jpg',
+    image: '/images/products/gate-grey-arched-ornate-medallion-door.webp',
   },
   {
     id: 'gate-navy-arched-oval-scrollwork',
@@ -629,7 +629,7 @@ export const products = [
     price: 'KES 78,000',
     material: 'Steel construction, arched top design, etched geometric panels, oval glass inserts with white scrollwork trim, navy finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-navy-arched-oval-scrollwork.jpg',
+    image: '/images/products/gate-navy-arched-oval-scrollwork.webp',
   },
   {
     id: 'gate-navy-slatted-copper-circle-motif',
@@ -638,7 +638,7 @@ export const products = [
     price: 'KES 98,000',
     material: 'Steel panel construction, slatted vent sections, copper geometric circle-and-line accent, navy finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-navy-slatted-copper-circle-motif.jpg',
+    image: '/images/products/gate-navy-slatted-copper-circle-motif.webp',
   },
   {
     id: 'gate-grey-geometric-panel-window',
@@ -647,7 +647,7 @@ export const products = [
     price: 'KES 48,000',
     material: 'Steel panel construction, geometric line design, side windowed panel, grey finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-grey-geometric-panel-window.jpg',
+    image: '/images/products/gate-grey-geometric-panel-window.webp',
   },
   {
     id: 'gate-copper-slat-greekkey-medallion',
@@ -656,7 +656,7 @@ export const products = [
     price: 'KES 130,000',
     material: 'Steel vertical slat panels, copper-toned finish, black Greek-key crossbar with central medallion',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-copper-slat-greekkey-medallion.jpg',
+    image: '/images/products/gate-copper-slat-greekkey-medallion.webp',
   },
   {
     id: 'gate-black-arch-outline-corner-bracket',
@@ -665,7 +665,7 @@ export const products = [
     price: 'KES 70,000',
     material: 'Steel double-door construction, silver arch outline detailing, decorative corner brackets, finial-topped railing, matte black finish',
     availability: 'Made to order, 5 – 8 days',
-    image: '/images/products/gate-black-arch-outline-corner-bracket.jpg',
+    image: '/images/products/gate-black-arch-outline-corner-bracket.webp',
   },
   {
     id: 'gate-geometric-primer',
@@ -674,7 +674,7 @@ export const products = [
     price: 'KES 110,000',
     material: 'Steel frame, primer coat (paint on request)',
     availability: 'Made to order, 4 – 6 days',
-    image: '/images/products/gate-geometric-primer.jpg',
+    image: '/images/products/gate-geometric-primer.webp',
   },
 ]
 
