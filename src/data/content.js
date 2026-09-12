@@ -605,6 +605,15 @@ export const products = [
     image: '/images/products/gate-grey-embossed-wave-panel.jpg',
   },
   {
+    id: 'gate-coral-slat-medallion-crossbar',
+    title: 'Coral Slat Gate with Medallion Crossbar',
+    category: 'gates',
+    price: 'KES 130,000',
+    material: 'Steel vertical slat panels, coral finish, black Greek-key crossbar with central medallion',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-coral-slat-medallion-crossbar.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
