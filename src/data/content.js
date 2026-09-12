@@ -632,6 +632,15 @@ export const products = [
     image: '/images/products/gate-navy-arched-oval-scrollwork.jpg',
   },
   {
+    id: 'gate-navy-slatted-copper-circle-motif',
+    title: 'Navy Slatted Gate with Copper Circle Motif',
+    category: 'gates',
+    price: 'KES 98,000',
+    material: 'Steel panel construction, slatted vent sections, copper geometric circle-and-line accent, navy finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-navy-slatted-copper-circle-motif.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
