@@ -614,6 +614,15 @@ export const products = [
     image: '/images/products/gate-coral-slat-medallion-crossbar.jpg',
   },
   {
+    id: 'gate-grey-arched-ornate-medallion-door',
+    title: 'Grey Arched Gate with Ornate Medallion Doors',
+    category: 'gates',
+    price: 'KES 75,000',
+    material: 'Steel construction, arched top design, embossed medallion door panels, fleur-de-lis scrollwork accents, grey finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-grey-arched-ornate-medallion-door.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
