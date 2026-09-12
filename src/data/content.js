@@ -23,6 +23,7 @@ export const business = {
   name: 'Afsaan Welders & Painters',
   tagline: 'Get a Unique Work of Art',
   location: 'Nakuru, Kenya',
+  serviceArea: 'Serving Nakuru, Nairobi & clients across Kenya',
   phone: '0799515155',
   whatsapp: '254799515155',
   hours: 'Mon – Sat, 8:00 AM – 6:00 PM',
