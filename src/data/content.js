@@ -560,6 +560,15 @@ export const products = [
     image: '/images/products/gate-black-scrollwork-tree-panel.jpg',
   },
   {
+    id: 'gate-black-diamond-lattice-copper-door',
+    title: 'Black Diamond Lattice Copper Door Gate',
+    category: 'gates',
+    price: 'KES 130,000',
+    material: 'Steel construction, diamond lattice panels with brass studs, copper-trimmed side door',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-black-diamond-lattice-copper-door.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
