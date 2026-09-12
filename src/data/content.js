@@ -623,6 +623,15 @@ export const products = [
     image: '/images/products/gate-grey-arched-ornate-medallion-door.jpg',
   },
   {
+    id: 'gate-navy-arched-oval-scrollwork',
+    title: 'Navy Arched Gate with Oval Scrollwork',
+    category: 'gates',
+    price: 'KES 78,000',
+    material: 'Steel construction, arched top design, etched geometric panels, oval glass inserts with white scrollwork trim, navy finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-navy-arched-oval-scrollwork.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
