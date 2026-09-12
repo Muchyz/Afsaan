@@ -596,6 +596,15 @@ export const products = [
     image: '/images/products/gate-arched-timber-panel-studded.jpg',
   },
   {
+    id: 'gate-grey-embossed-wave-panel',
+    title: 'Grey Embossed Wave Panel Gate',
+    category: 'gates',
+    price: 'KES 95,000',
+    material: 'Steel panel construction, embossed wave and floral motif, scrollwork crest, grey finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-grey-embossed-wave-panel.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
