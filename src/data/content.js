@@ -650,6 +650,15 @@ export const products = [
     image: '/images/products/gate-grey-geometric-panel-window.jpg',
   },
   {
+    id: 'gate-copper-slat-greekkey-medallion',
+    title: 'Copper Slat Gate with Greek Key Medallion',
+    category: 'gates',
+    price: 'KES 130,000',
+    material: 'Steel vertical slat panels, copper-toned finish, black Greek-key crossbar with central medallion',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-copper-slat-greekkey-medallion.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
