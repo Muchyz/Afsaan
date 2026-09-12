@@ -530,6 +530,15 @@ export const products = [
     image: '/images/products/gate-black-copper-slat-double-door.jpg',
   },
   {
+    id: 'gate-charcoal-arched-double-door',
+    title: 'Charcoal Arched Double Door Gate',
+    category: 'gates',
+    price: 'KES 85,000',
+    material: 'Steel frame construction, arched top design, vertical bar handles, charcoal finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-charcoal-arched-double-door.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
