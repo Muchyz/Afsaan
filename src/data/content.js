@@ -511,6 +511,15 @@ export const products = [
     image: '/images/products/gate-brass-wildlife-panel.jpg',
   },
   {
+    id: 'gate-grey-vertical-slat-panel',
+    title: 'Grey Vertical Slat Panel Gate',
+    category: 'gates',
+    price: 'KES 130,000',
+    material: 'Steel frame, vertical slat panel design, grey finish, cut-out accents',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-grey-vertical-slat-panel.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
