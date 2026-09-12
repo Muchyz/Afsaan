@@ -659,6 +659,15 @@ export const products = [
     image: '/images/products/gate-copper-slat-greekkey-medallion.jpg',
   },
   {
+    id: 'gate-black-arch-outline-corner-bracket',
+    title: 'Black Gate with Silver Arch Outline',
+    category: 'gates',
+    price: 'KES 70,000',
+    material: 'Steel double-door construction, silver arch outline detailing, decorative corner brackets, finial-topped railing, matte black finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-black-arch-outline-corner-bracket.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
