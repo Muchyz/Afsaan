@@ -15,7 +15,7 @@ export default function Services() {
           <h1 className="text-2xl sm:text-4xl font-bold text-white">Welding & Painting, Covering the Full Compound</h1>
           <div className="mt-5 h-[3px] w-16 bg-gradient-to-r from-brandred to-white/40 rounded-full mx-auto" />
           <p className="max-w-md mx-auto text-sm text-white/70 mt-5">
-            Every job is fabricated or painted in-house, measured on site, and quoted before we start.
+            From custom steel gates and staircases to full house painting, every job is fabricated or painted in-house — measured on site in Nakuru, Nairobi, or wherever you're based, and quoted before we start.
           </p>
         </div>
       </div>

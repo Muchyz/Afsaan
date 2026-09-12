@@ -13,6 +13,17 @@ const categoryLabels = {
   braai: 'Braai & BBQ Stands',
 }
 
+const categoryCopy = {
+  "gates": "Whether you need a sliding gate, an ornate wrought-iron design, or a simple panel gate, every gate here is fabricated to order \u2014 not mass-produced. Send us your measurements or visit our workshop in Nakuru, and we'll build a gate that fits your compound exactly.",
+  "windows": "Steel window frames and burglar-proofing built for security without sacrificing light. Available ready-made in standard sizes or custom-welded to match your window openings.",
+  "staircases": "Straight-run, dog-leg, or spiral \u2014 these staircases are fabricated as complete units, ready for on-site installation in Nakuru, Nairobi, or wherever your project is based.",
+  "kiosks": "Compact, lockable steel kiosks built for retail, mobile vending, or site offices. Delivered ready to place, or customised to your business branding on request.",
+  "pergolas": "Steel-framed pergolas for patios, driveways, and outdoor living spaces \u2014 built to handle Kenya's sun and rain without warping or rusting through.",
+  "containers": "Shipping containers converted into shops, offices, or storage units, with steel reinforcement, insulation, and finishing options built in from the start.",
+  "watertanks": "Engineered steel stands sized to your tank's full-load weight, not eyeballed \u2014 because a wobbling tank stand isn't a risk worth taking.",
+  "braai": "Outdoor braai and BBQ stands built from solid steel, ready to install in your garden or entertainment area."
+}
+
 function ProductCard({ p }) {
   const waMessage = encodeURIComponent(`Hi, I'd like to order the ${p.title} shown on your website.`)
   return (
@@ -94,9 +105,12 @@ export default function Products() {
 
       {categories.map((cat) => (
         <div key={cat} id={`cat-${cat}`} className="mb-14 last:mb-0 scroll-mt-20">
-          <h2 className="text-xl md:text-2xl font-bold text-navy mb-5 border-l-4 border-brandred pl-3">
+          <h2 className="text-xl md:text-2xl font-bold text-navy mb-3 border-l-4 border-brandred pl-3">
             {categoryLabels[cat] || cat}
           </h2>
+          <p className="text-sm text-slate mb-5 max-w-2xl">
+            {categoryCopy[cat] || ''}
+          </p>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {products.filter((p) => p.category === cat).sort((a, b) => (a.price ? 0 : 1) - (b.price ? 0 : 1)).map((p) => (
               <ProductCard key={p.id} p={p} />
