@@ -428,6 +428,7 @@ export const products = [
     id: 'gate-navy-studded-panel',
     title: 'Navy Studded Panel Gate',
     category: 'gates',
+    price: 'KES 85,000',
     material: 'Steel panel construction, decorative stud detail, navy finish',
     availability: 'Made to order, 5 – 8 days',
     image: '/images/products/gate-navy-studded-panel.jpg',
