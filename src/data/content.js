@@ -569,6 +569,15 @@ export const products = [
     image: '/images/products/gate-black-diamond-lattice-copper-door.jpg',
   },
   {
+    id: 'container-charcoal-copper-trim-door',
+    title: 'Charcoal Container with Copper Trim Door',
+    category: 'containers',
+    price: 'KES 130,000',
+    material: 'Steel container conversion, horizontal panel cladding, copper-trimmed door and window, charcoal finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/container-charcoal-copper-trim-door.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
