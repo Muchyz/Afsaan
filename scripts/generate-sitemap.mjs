@@ -1,6 +1,6 @@
 import { readFileSync, writeFileSync } from 'fs'
 
-const BASE = 'https://YOURDOMAIN.com' // <-- replace with real domain
+const BASE = 'https://www.afsaan.co.ke' // <-- replace with real domain
 const staticRoutes = ['/', '/services', '/products', '/gallery', '/about', '/reviews', '/faq', '/contact', '/quote']
 const today = new Date().toISOString().split('T')[0]
 
