@@ -573,7 +573,7 @@ export const products = [
     title: 'Charcoal Container with Copper Trim Door',
     category: 'gates',
     price: 'KES 130,000',
-    material: 'Steel container conversion, horizontal panel cladding, copper-trimmed door and window, charcoal finish',
+    material: 'Steel gate construction, horizontal panel cladding, copper-trimmed door and window, charcoal finish',
     availability: 'Made to order, 5 – 8 days',
     image: '/images/products/container-charcoal-copper-trim-door.jpg',
   },
