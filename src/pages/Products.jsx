@@ -16,8 +16,8 @@ function ProductCard({ p }) {
   const waMessage = encodeURIComponent(`Hi, I'd like to order the ${p.title} shown on your website.`)
   return (
     <div className="bg-white rounded-2xl shadow-lg shadow-slate/10 overflow-hidden border border-slate/10">
-      <div className="w-full bg-offwhite">
-        <img src={p.image} alt={p.title} loading="lazy" decoding="async" className="w-full h-auto object-contain" />
+      <div className="w-full bg-offwhite aspect-[4/3] flex items-center justify-center overflow-hidden">
+        <img src={p.image} alt={p.title} loading="lazy" decoding="async" className="w-full h-full object-cover transition-opacity duration-300" />
       </div>
       <div className="p-4">
         <h3 className="font-bold text-navy">{p.title}</h3>
