@@ -7,8 +7,13 @@ import FAQSection from '../components/sections/FAQSection'
 import CTASection from '../components/sections/CTASection'
 import SectionHeading from '../components/ui/SectionHeading'
 import Button from '../components/ui/Button'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Home() {
+  usePageMeta(
+    'Afsaan Welders & Painters — Custom Steel Gates, Fabrication & Welding | Nakuru, Nairobi & Kenya-Wide',
+    'Afsaan Welders & Painters — custom steel gates, staircases, fabrication and painting based in Nakuru, serving Nairobi and clients across Kenya. Get a unique work of art.'
+  )
   return (
     <>
       <Hero />

@@ -5,6 +5,7 @@ import { iconMap } from '../data/icons'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
 import NotFound from './NotFound'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 function getIncludedItems(service) {
   const isPainting = service.category === 'painting'
@@ -42,6 +43,11 @@ function getStepIcon(title = '') {
 export default function ServiceDetail() {
   const { slug } = useParams()
   const service = services.find((s) => s.slug === slug)
+
+  usePageMeta(
+    service ? `${service.title} in ${business.location} & Nairobi | Afsaan Welders & Painters` : undefined,
+    service ? `${service.short} Serving ${business.location}, Nairobi and clients across Kenya.` : undefined
+  )
   if (!service) return <NotFound />
 
   const Icon = iconMap[service.icon]

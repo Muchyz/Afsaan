@@ -1,6 +1,11 @@
 import ServicesGrid from '../components/sections/ServicesGrid'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Services() {
+  usePageMeta(
+    'Welding & Fabrication Services | Gates, Staircases, Painting — Nakuru, Nairobi & Kenya',
+    'Full welding, fabrication and painting services from Afsaan Welders & Painters — gates, staircases, roofing, water tanks and more. Serving Nakuru, Nairobi and clients across Kenya.'
+  )
   return (
     <div>
       <div className="relative overflow-hidden text-center py-16 px-6 bg-cover bg-center" style={{ backgroundImage: "url('/images/services-bg.jpg')" }}>

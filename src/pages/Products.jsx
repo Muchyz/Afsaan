@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import { products, business } from '../data/content'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const categoryLabels = {
   gates: 'Gates',
@@ -40,6 +41,10 @@ function ProductCard({ p }) {
 }
 
 export default function Products() {
+  usePageMeta(
+    'Custom Steel Gates, Windows & Fabrication | Nakuru, Nairobi & Kenya',
+    'Ready-built and custom steel gates, windows, staircases, kiosks, pergolas, container conversions and more from Afsaan Welders & Painters. Serving Nakuru, Nairobi and clients across Kenya.'
+  )
   const categories = [...new Set(products.map((p) => p.category))]
 
   useEffect(() => {
