@@ -641,6 +641,15 @@ export const products = [
     image: '/images/products/gate-navy-slatted-copper-circle-motif.jpg',
   },
   {
+    id: 'gate-grey-geometric-panel-window',
+    title: 'Grey Geometric Panel Gate with Window',
+    category: 'gates',
+    price: 'KES 48,000',
+    material: 'Steel panel construction, geometric line design, side windowed panel, grey finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-grey-geometric-panel-window.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
