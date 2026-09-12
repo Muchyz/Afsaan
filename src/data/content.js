@@ -542,6 +542,7 @@ export const products = [
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
+    price: 'KES 110,000',
     material: 'Steel frame, primer coat (paint on request)',
     availability: 'Made to order, 4 – 6 days',
     image: '/images/products/gate-geometric-primer.jpg',
