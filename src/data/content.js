@@ -587,6 +587,15 @@ export const products = [
     image: '/images/products/gate-timber-navy-sliding-pedestrian.jpg',
   },
   {
+    id: 'gate-arched-timber-panel-studded',
+    title: 'Arched Timber Panel Gate with Studs',
+    category: 'gates',
+    price: 'KES 130,000',
+    material: 'Steel frame, arched top design, timber-look vertical slat panels, copper diamond stud accents',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-arched-timber-panel-studded.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
