@@ -539,6 +539,15 @@ export const products = [
     image: '/images/products/gate-charcoal-arched-double-door.jpg',
   },
   {
+    id: 'gate-black-scrollwork-tree-panel',
+    title: 'Black Scrollwork Tree Panel Gate',
+    category: 'gates',
+    price: 'KES 150,000',
+    material: 'Steel construction, arched laser-cut scrollwork top, tree silhouette side panels, gold accent trim',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-black-scrollwork-tree-panel.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
