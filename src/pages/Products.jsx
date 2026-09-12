@@ -22,6 +22,7 @@ function ProductCard({ p }) {
         <h3 className="font-bold text-navy">{p.title}</h3>
         <p className="text-sm text-slate mt-1">{p.material}</p>
         <p className="text-xs text-slate/70 mt-1">{p.availability}</p>
+        {p.price && <p className="mt-2 font-extrabold text-brandred">{p.price}</p>}
         <a
           href={`https://wa.me/${business.whatsapp}?text=${waMessage}`}
           target="_blank"
@@ -77,7 +78,7 @@ export default function Products() {
             {categoryLabels[cat] || cat}
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {products.filter((p) => p.category === cat).map((p) => (
+            {products.filter((p) => p.category === cat).sort((a, b) => (a.price ? 0 : 1) - (b.price ? 0 : 1)).map((p) => (
               <ProductCard key={p.id} p={p} />
             ))}
           </div>
