@@ -520,6 +520,14 @@ export const products = [
     image: '/images/products/gate-grey-vertical-slat-panel.jpg',
   },
   {
+    id: 'gate-diamond-pyramid-panel',
+    title: 'Diamond Pyramid Panel Gate',
+    category: 'gates',
+    material: 'Steel frame, pyramid-textured panels, gold trim accents, black and grey finish',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-diamond-pyramid-panel.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
