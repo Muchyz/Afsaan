@@ -1,3 +1,4 @@
+import { useEffect } from 'react'
 import { products, business } from '../data/content'
 
 const categoryLabels = {
@@ -40,6 +41,20 @@ function ProductCard({ p }) {
 
 export default function Products() {
   const categories = [...new Set(products.map((p) => p.category))]
+
+  useEffect(() => {
+    const saved = sessionStorage.getItem('productsScrollY')
+    if (saved) {
+      window.scrollTo(0, parseInt(saved, 10))
+    }
+
+    const handleScroll = () => {
+      sessionStorage.setItem('productsScrollY', window.scrollY.toString())
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
 
   const scrollToCategory = (cat) => {
     const el = document.getElementById(`cat-${cat}`)
