@@ -528,6 +528,14 @@ export const products = [
     image: '/images/products/gate-diamond-pyramid-panel.jpg',
   },
   {
+    id: 'gate-black-copper-slat-double-door',
+    title: 'Black & Copper Slat Double Door Gate',
+    category: 'gates',
+    material: 'Steel frame construction, copper-trimmed glass panel doors, black slat side accents',
+    availability: 'Made to order, 5 – 8 days',
+    image: '/images/products/gate-black-copper-slat-double-door.jpg',
+  },
+  {
     id: 'gate-geometric-primer',
     title: 'Geometric Primer Gate',
     category: 'gates',
