@@ -3,6 +3,7 @@ import { useSearchParams } from 'react-router-dom'
 import { Send, User, Phone, MapPin, Wrench, Ruler, MessageSquare, ShieldCheck, Clock, BadgeCheck } from 'lucide-react'
 import { services, business } from '../data/content'
 import Card from '../components/ui/Card'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const fieldWrap = 'relative mt-2'
 const iconClass = 'absolute left-3 top-1/2 -translate-y-1/2 text-brandred'
@@ -10,6 +11,11 @@ const inputBase = 'w-full border border-slate/20 rounded-lg pl-10 pr-3 py-2.5 te
 const labelBase = 'block text-xs font-semibold uppercase tracking-wide text-slate/60'
 
 export default function Quote() {
+  usePageMeta(
+    'Get a Free Quote | Afsaan Welders & Painters — Nakuru, Nairobi & Kenya',
+    'Request a fixed, no-surprise quote for custom steel gates, staircases, fabrication or painting. Serving Nakuru, Nairobi and clients across Kenya.'
+  )
+
   const [params] = useSearchParams()
   const [form, setForm] = useState({ name: '', phone: '', location: '', service: params.get('service') || '', dimensions: '', details: '' })
   const update = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }))

@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { X, ChevronLeft, ChevronRight } from 'lucide-react'
 import { products } from '../data/content'
 import SectionHeading from '../components/ui/SectionHeading'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const captionPool = [
   'Delivered to a client in Nakuru',
@@ -32,6 +33,11 @@ const categoryLabels = {
 }
 
 export default function Gallery() {
+  usePageMeta(
+    'Steel Gates & Fabrication Gallery | Afsaan Welders & Painters',
+    'Browse real completed gates, staircases, roofing, and painting projects by Afsaan Welders & Painters — Nakuru, Nairobi and Kenya-wide.'
+  )
+
   const [active, setActive] = useState('all')
   const [lightboxIndex, setLightboxIndex] = useState(null)
 

@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { Phone, MapPin, Clock, MessageCircle, Send, User, MessageSquare } from 'lucide-react'
 import { business } from '../data/content'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const infoItems = [
   { icon: Phone, label: 'Call or WhatsApp', valueKey: 'phone' },
@@ -9,6 +10,11 @@ const infoItems = [
 ]
 
 export default function Contact() {
+  usePageMeta(
+    'Contact Afsaan Welders & Painters | Nakuru, Nairobi & Kenya',
+    'Get in touch for custom steel gates, staircases, fabrication and painting quotes. Serving Nakuru, Nairobi and clients across Kenya.'
+  )
+
   const [form, setForm] = useState({ name: '', phone: '', message: '' })
   const update = (key) => (e) => setForm((f) => ({ ...f, [key]: e.target.value }))
 

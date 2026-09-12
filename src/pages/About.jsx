@@ -4,6 +4,7 @@ import { business, heroImage, services } from '../data/content'
 import { iconMap } from '../data/icons'
 import Card from '../components/ui/Card'
 import Button from '../components/ui/Button'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const values = [
   { icon: Wrench, title: 'Built on Site, Not Guessed At', text: 'Every job is measured in person before fabrication starts — no fitting surprises on install day.' },
@@ -18,6 +19,11 @@ const process = [
 ]
 
 export default function About() {
+  usePageMeta(
+    'Serving Nakuru, Nairobi & Kenya — Afsaan Welders & Painters | About Us',
+    'Steel welders and painters based in Nakuru, serving Nairobi and clients across Kenya. Learn about our fabrication and painting workshop.'
+  )
+
   return (
     <div>
       <section className="relative">

@@ -1,5 +1,6 @@
 import { Star, Users, ThumbsUp } from 'lucide-react'
 import TestimonialsSection from '../components/sections/TestimonialsSection'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 const stats = [
   { icon: Star, value: '4.9/5', label: 'Average rating', color: 'text-amber-500', fill: 'currentColor' },
@@ -8,6 +9,11 @@ const stats = [
 ]
 
 export default function Reviews() {
+  usePageMeta(
+    'Customer Reviews | Afsaan Welders & Painters',
+    'See what clients across Nakuru, Nairobi and Kenya say about our steel fabrication and painting work.'
+  )
+
   return (
     <div className="section-pad !pt-8">
       <div className="max-w-6xl mx-auto">
