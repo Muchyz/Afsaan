@@ -16,7 +16,7 @@ function ProductCard({ p }) {
   return (
     <div className="bg-white rounded-2xl shadow-lg shadow-slate/10 overflow-hidden border border-slate/10">
       <div className="w-full bg-offwhite">
-        <img src={p.image} alt={p.title} loading="lazy" decoding="async" className="w-full h-auto object-contain" />
+        <img src={p.image} alt={p.title} decoding="async" className="w-full h-auto object-contain" />
       </div>
       <div className="p-4">
         <h3 className="font-bold text-navy">{p.title}</h3>
