@@ -42,7 +42,7 @@ export const products = [
     id: 'gate-grey-panel',
     title: 'Grey Panel Gate',
     category: 'gates',
-    price: 'KES 85,000',
+    price: 'KES 95,000',
     material: 'Steel box section, matte grey finish',
     availability: 'Made to order, 4 – 6 days',
     image: '/images/products/gate-grey-panel.webp',
